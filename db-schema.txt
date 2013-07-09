@@ -3,7 +3,7 @@ Schema:
  * Dealer Schema
  * Product Schema
  * Sales Order schema
-  ** Billing structure
+   ** Billing structure
  * Customer/Organization Schema
  * Event Schema
  * Employee Schema
