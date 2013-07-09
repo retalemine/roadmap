@@ -1,9 +1,9 @@
-Release 1:
-==========
+Release 1.0:
+============
  * Bill processing
 
-Releases 2:
-==========
+Release 2.0:
+=============
  * User role based access restriction
  * Purchase processing
  * Inventory creation
@@ -11,39 +11,39 @@ Releases 2:
  * Order tracking
  * Price label generation
 
-Releases 3:
-==========
+Release 3.0:
+============
  * Discount sales 
  * Return and claim
  * Damage and loss mitigation
  * Expenses tracking
 
-Releases 4:
-==========
+Release 4.0:
+============
  * Dealer tracking
  * Customer tracking
  * Sales reporting
  * Purchase suggestion
 
-Releases 5:
-==========
+Release 5.0:
+============
  * Online catalog
 
-Releases 6:
-==========
+Release 6.0:
+============
  * Online order placing
 
-Releases 7:
-==========
+Release 7.0:
+============
  * Online payment
 
-Releases 8:
-==========
+Release 8.0:
+============
  * Online customer profile management
  * Gift and rewards
 
-Releases 9:
-========== 
+Release 9.0:
+============
  * Handheld devices for purchase processing
  * Inventory management
  * Order tracking
