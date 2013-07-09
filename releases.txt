@@ -1,32 +1,49 @@
-Releases 1:
+Release 1:
+==========
  * Bill processing
+
 Releases 2:
+==========
  * User role based access restriction
  * Purchase processing
  * Inventory creation
  * Bill processing
  * Order tracking
  * Price label generation
+
 Releases 3:
+==========
  * Discount sales 
  * Return and claim
  * Damage and loss mitigation
  * Expenses tracking
+
 Releases 4:
+==========
  * Dealer tracking
  * Customer tracking
  * Sales reporting
  * Purchase suggestion
+
 Releases 5:
+==========
  * Online catalog
+
 Releases 6:
+==========
  * Online order placing
+
 Releases 7:
+==========
  * Online payment
+
 Releases 8:
+==========
  * Online customer profile management
  * Gift and rewards
-Releases 9: 
+
+Releases 9:
+========== 
  * Handheld devices for purchase processing
  * Inventory management
  * Order tracking
