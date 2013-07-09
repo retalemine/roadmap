@@ -1,4 +1,4 @@
 roadmap
 =======
 
-contains file describing the goal, product features, development phase, technologies chosen, design
+Contains files describing goal, product features, technologies, product releases, design, db-schema.
