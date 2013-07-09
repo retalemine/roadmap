@@ -1,0 +1,11 @@
+Schema:
+ * Purchase order schema
+ * Dealer Schema
+ * Product Schema
+ * Sales Order schema
+  ** Billing structure
+ * Customer/Organization Schema
+ * Event Schema
+ * Employee Schema
+ * Access control schema
+ * Shelf schema
