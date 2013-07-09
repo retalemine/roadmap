@@ -1,0 +1,9 @@
+Release 1.0:
+Action items:
+ * UI design
+ * General bill schema and general product catalog design
+Use cases:
+ * On the fly product catalog creation and suggestion
+ * Sales tracking
+ * Multi language support
+ * Multiple printer support
