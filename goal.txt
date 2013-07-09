@@ -15,33 +15,33 @@ Goal:
 Desktop application:
 ====================
  * Pros:
-   * Not dependent on browser
-   * Runs as separate process
+   ** Not dependent on browser
+   ** Runs as separate process
  * Cons:
-   * Client side installation required
-   * Lack of rich UI components in open source category
-   * Concurrency amidst multiple terminal and session management needed.
-   * Network connection management
+   ** Client side installation required
+   ** Lack of rich UI components in open source category
+   ** Concurrency amidst multiple terminal and session management needed.
+   ** Network connection management
 
 Web application:
 ================
  * Pros:
-   * Except for browser no additional installation at client side required.
-   * Rich UI available
-   * Concurrency and sessions can be managed 
-   * No specific network connection coding needed.
-   * Accessible from anywhere and from any browser.
+   ** Except for browser no additional installation at client side required.
+   ** Rich UI available
+   ** Concurrency and sessions can be managed 
+   ** No specific network connection coding needed.
+   ** Accessible from anywhere and from any browser.
  * Cons:
-   * Dependent on browser integrity
+   ** Dependent on browser integrity
 
 Major Action Items:
 ===================
  * Cost associated with each model via each phase. 
-   * Hardware and software costs.
-   * Infrastructure costs like network connectivity.
+   ** Hardware and software costs.
+   ** Infrastructure costs like network connectivity.
  * Risk factors
-   * Network connectivity lost issues.
-   * Server down or system crashes.
+   ** Network connectivity lost issues.
+   ** Server down or system crashes.
  * Time availability
  * Cross platform
 
