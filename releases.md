@@ -4,45 +4,52 @@
 
 ###Release 2.0:
 ---
-* User role based access restriction
 * Purchase processing
 * Inventory creation
 * Bill processing
 * Order tracking
-* Price label generation
 
 ###Release 3.0:
+---
+* Barcode based processing
+* Price label generation
+* User role based access restriction
+
+###Release 4.0:
 ---
 * Discount sales 
 * Return and claim
 * Damage and loss mitigation
 * Expenses tracking
-
-###Release 4.0:
----
-* Dealer tracking
-* Customer tracking
-* Sales reporting
-* Purchase suggestion
+* Payment via card
 
 ###Release 5.0:
 ---
-* Online catalog
+* Dealer tracking
+* Customer tracking
+* Employee tracking & payroll
+* Sales reporting
+* Purchase suggestion
 
 ###Release 6.0:
 ---
-* Online order placing
+* Online catalog
+* Online order @ outlet
 
 ###Release 7.0:
 ---
-* Online payment
+* Online order placing from anywhere
 
 ###Release 8.0:
+---
+* Online payment
+
+###Release 9.0:
 ---
 * Online customer profile management
 * Gift and rewards
 
-###Release 9.0:
+###Release 10.0:
 ---
 * Handheld devices for purchase processing
 * Inventory management
@@ -99,6 +106,13 @@
 ###Release 3.0:
 ---
 ####Use cases:
+* Barcode based processing
+* Price label generation
+* User role based access restriction
+
+###Release 4.0:
+---
+####Use cases:
 * Discount% suggestion @ product level (provided the feature enabled and the profit margin set (default 0%))
   * For any product, discount% should be suggested in such a way that the s quantity of sales order count for a particular price with n quantity items in rack(left behind after removing s quantity and pertaining to that price) 
     * If (s + n <= p (last purchase count) of that price) then the discount percentage is 0% to d% where d% discount will give up to the set min margin profit.
@@ -121,8 +135,9 @@
 * Funding and personal expenses tracking
   * Delivery charges
   * Transportation charges
+* Payment via card
 
-###Release 4.0:
+###Release 5.0:
 ---
 ####Use cases:
 * Sales closure
@@ -140,30 +155,31 @@
 * Tracking Procurement [Company/Dealer/Period/Category]
 * Seasonal purchase suggestion
 * Print functionality
-
-###Release 5.0:
----
-####Use cases:
-* Online catalog build
-
+* Employee tracking & payroll
 
 ###Release 6.0:
 ---
 ####Use cases:
-* Online order placing via Cash-On-delivery
+* Online catalog
+* Online order @ outlet
 
 ###Release 7.0:
 ---
 ####Use cases:
-* Online purchase via instant payment
+* Online order placing via Cash-On-delivery
 
 ###Release 8.0:
+---
+####Use cases:
+* Online purchase via instant payment
+
+###Release 9.0:
 ---
 ####Use cases:
 * Online customer profile management
 * Gift and rewards
 
-###Release 9.0: 
+###Release 10.0: 
 ---
 ####Use cases:
 * Handheld devices for purchase processing
