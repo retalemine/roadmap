@@ -1,22 +1,9 @@
-Desktop application:
-====================
- * Pros:
-   ** Not dependent on browser
-   ** Runs as separate process
- * Cons:
-   ** Client side installation required
-   ** Lack of rich UI components in open source category
-   ** Concurrency amidst multiple terminal and session management needed.
-   ** Network connection management
 
-Web application:
-================
- * Pros:
-   ** Except for browser no additional installation at client side required.
-   ** Rich UI available
-   ** Concurrency and sessions can be managed 
-   ** No specific network connection coding needed.
-   ** Accessible from anywhere and from any browser.
- * Cons:
-   ** Dependent on browser integrity
-
+Desktop Application | Web Application
+---|---
+Requires client interface application. No dependency on browser. | No specific cleint application. Dependent on browser. Plugin optional.
+Runs as separate process. | Runs as part of browser request handling.
+Client side installation required. | Browser needed at client side.
+Lacks open source Rich UI. | Rich UI available.
+Code w.r.t network connection, concurrency, session needs extra care. | Works over http and concurrency and session are implicitly handled 
+Accessible only from client interface. | Accessible from any browser and from anywhere.
