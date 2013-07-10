@@ -3,7 +3,7 @@
 Category | Chosen | Other choice
 ---|:---:|---
 UI components | Vaadin | GWT, Dojo
-Core components | Java | Scala, Python, Ruby on Rails
+Core components | Java | Scala, Groovy, Python, Ruby on Rails
 Development Framework | SpringFramework | PlayFramework, Grails, DjangoFramework
 Testing Bundle | TestNG | Junit 
 Data Center | MongoDB | 
