@@ -1,6 +1,6 @@
 ###Product Category:
 ---
-####[Provision:](#provision)
+####[Provision:](#linkprovision)
 * Groceries
 * Beverages
 * Snacks
@@ -9,7 +9,7 @@
 * Bath and toilet accessories 
 * Personal Cleansing Accessories
 
-####[Fancy:](#fancy)
+####[Fancy:](#linkfancy)
 * Stationaries
 * Books
 * Decorative Items
@@ -23,7 +23,7 @@
 * Personal accessories
 * Baby Accessories
 
-####[Appliance:](#appliance)
+####[Appliance:](#linkappliance)
 * Plastic items
 * Metal items
 * Kitchenware
@@ -34,7 +34,7 @@
 ***
 ###Products:
 ---
-<h4 id="provision">Provision:</h4>
+<h4 id="linkprovision">Provision:</h4>
 * Groceries
   * Pulses
   * Cereals & Flours
@@ -84,7 +84,7 @@
   * Shoe polish
   * Shoe brush
 
-<h4 id="fancy">Fancy:</h4>
+<h4 id="linkfancy">Fancy:</h4>
 * Stationary [school, office]
   * Pencil [Shades of pencil]
   * Eraser [White, Ink]
@@ -308,7 +308,7 @@
   * Baby Cradle rope
   * Baby Cradle spring
 
-<h4 id="appliance">Appliance:</h4>
+<h4 id="linkappliance">Appliance:</h4>
 * Plastic items
   * Container
   * Bucket
