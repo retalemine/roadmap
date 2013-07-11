@@ -8,9 +8,9 @@ Development Framework | SpringFramework | PlayFramework, Grails, DjangoFramework
 Testing Bundle | TestNG | Junit 
 Data Center | MongoDB | 
 Dependency management | Ivy | Gradle
-Repository manager | nexus | artifactory
+Repository manager | | nexus, artifactory
 SCM | Git | 
 Application Server | Jetty | Apache Tomcat, Httpd, Nginx, Jboss, Glass Fish
 IDE | Eclipse | IntelliJ, Aptana
-Build Manager | TeamCity | Hudson, Lunt
+Build Manager | travis | TeamCity, Hudson, Lunt
 Platform | Ubuntu | Other linux OS
