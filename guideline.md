@@ -22,3 +22,4 @@
   * Server down or system crashes.
 * Time availability
 * Cross platform
+* Open source license
