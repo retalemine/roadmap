@@ -91,7 +91,8 @@
 * Door Delivery Order
   * For every order placed, sales order schema is created and a bill is generated with payment as paid, on door payment, monthly settlement.
 * Fulfillment
-  * For every Door Delivery orders placed ensure payment is complete and the system is updated.
+  * For every Door Delivery orders placed ensure delivery is successful, payment is complete and the system is updated.
+  * For every return in delivery the sales order is updated accordingly.
 * Sales closure
   * Inventory updated based on every sales order.
 
