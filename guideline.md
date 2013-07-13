@@ -23,3 +23,18 @@
 * Time availability
 * Cross platform
 * Open source license
+
+###Guidelines for application architecture
+---
+* Communication between presentation, business, data layer
+* Loosely coupled
+* Secure
+* Scalable
+* Zero down time
+
+###Guidelines for coding
+---
+* Enhanceable over different release - extendability
+* Code reuse
+* Presentation be a single war
+* Business and data layer be available as a standard jar
