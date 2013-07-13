@@ -1,6 +1,16 @@
-### Helpful links
+###Helpful links
 * Markdown
   * http://daringfireball.net/projects/markdown/syntax
   * https://github.com/fletcher/MultiMarkdown/blob/master/Documentation/Markdown%20Syntax.md
   * https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
   * https://help.github.com/articles/github-flavored-markdown
+
+* Printing
+  * http://docs.oracle.com/javase/tutorial/2d/index.html
+  * http://docs.oracle.com/javase/tutorial/2d/printing/index.html
+
+* Internationalization
+  * http://docs.oracle.com/javase/tutorial/i18n/index.html
+  
+
+
