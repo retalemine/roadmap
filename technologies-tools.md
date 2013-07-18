@@ -10,7 +10,7 @@ Testing Bundle | TestNG | Junit
 Data Center | MongoDB | 
 Dependency management | Ivy | Gradle
 Repository manager | | nexus, artifactory
-SCM | Git | 
+SCM | Git (GitHub) | 
 Application Server | Jetty | Apache Tomcat, Httpd, Nginx, Jboss, Glass Fish
 IDE | Eclipse | IntelliJ, Aptana
 Build Manager | Travis | TeamCity, Hudson, Lunt
