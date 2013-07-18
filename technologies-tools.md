@@ -5,6 +5,7 @@ Category | Chosen | Other choice
 UI components | Vaadin | GWT, Dojo
 Core components | Java | Scala, Groovy, Python, Ruby on Rails
 Development Framework | SpringFramework | PlayFramework, TapestryFramework, Grails, DjangoFramework
+Templating Engine | | FreeMarker, Velocity Template Engine
 Testing Bundle | TestNG | Junit 
 Data Center | MongoDB | 
 Dependency management | Ivy | Gradle
