@@ -16,7 +16,12 @@
 * Framework
   * http://static.springsource.org/spring/docs/2.5.5/reference/web-integration.html
   * http://tapestry.apache.org/integrating-with-spring-framework.html
-  * 
+
+* Design Pattern
+  * http://en.wikipedia.org/wiki/Design_pattern_%28computer_science%29
+
+* General
+  * http://www.slideshare.net/mraible
   
 
 
