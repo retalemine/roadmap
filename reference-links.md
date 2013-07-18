@@ -22,6 +22,6 @@
 
 * General
   * http://www.slideshare.net/mraible
-  
+  * http://raibledesigns.com/rd/page/publications
 
 
