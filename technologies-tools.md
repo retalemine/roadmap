@@ -2,8 +2,8 @@
 ---
 Category | Chosen | Other choice
 ---|:---:|---
-UI components | Vaadin | GWT, Dojo, SiteMesh, Bootstrap, Node.Js
-Core components | Java | Scala, Groovy, Python, Ruby on Rails
+UI components | Vaadin | GWT, Dojo, SiteMesh, Bootstrap
+Core components | Java | Scala, Groovy, Python, Ruby on Rails, Node.Js
 Development Framework | SpringFramework | PlayFramework, TapestryFramework, Grails, DjangoFramework
 Templating Engine | | FreeMarker, Apache Velocity
 Testing Bundle | TestNG | Junit 
