@@ -25,4 +25,7 @@
   * http://www.slideshare.net/mraible
   * http://raibledesigns.com/rd/page/publications
 
+* Eclipse
+  * https://code.google.com/p/run-jetty-run/
+
 
