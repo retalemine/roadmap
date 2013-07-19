@@ -31,6 +31,7 @@
 * Secure
 * Scalable
 * Zero down time
+* Cross platform compatible and should target multiple devices
 
 ###Guidelines for coding
 ---
