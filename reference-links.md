@@ -16,6 +16,8 @@
 * Framework
   * http://static.springsource.org/spring/docs/2.5.5/reference/web-integration.html
   * http://tapestry.apache.org/integrating-with-spring-framework.html
+  * http://tapestry.apache.org/presentations.html
+  * http://www.playframework.com/documentation/2.1.1/JavaTodoList
 
 * Design Pattern
   * http://en.wikipedia.org/wiki/Design_pattern_%28computer_science%29
