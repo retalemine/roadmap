@@ -19,6 +19,7 @@
 
 * Design Pattern
   * http://en.wikipedia.org/wiki/Design_pattern_%28computer_science%29
+  * http://www.objectmentor.com/resources/articles/ocp.pdf
 
 * General
   * http://www.slideshare.net/mraible
