@@ -13,6 +13,6 @@ Repository manager | | nexus, artifactory
 SCM | Git (GitHub) | 
 Application Server | Jetty | Apache Tomcat, Httpd, Nginx, Jboss, Glass Fish
 IDE | Eclipse | IntelliJ, Aptana
-Build Manager | Travis | CloudBees, TeamCity, Hudson, Lunt
+Continuous build | Travis | CloudBees, TeamCity, Hudson, Lunt
 Production Environment | Heroku |
 Platform | Ubuntu | Other linux OS
