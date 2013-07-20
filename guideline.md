@@ -39,3 +39,8 @@
 * Code reuse
 * Presentation be a single war
 * Business and data layer be available as a standard jar
+* Project setup should always start from maven archetype
+* Business layer be first created
+
+###KickStart
+* Give a try for each framework and understand the pros and cons
