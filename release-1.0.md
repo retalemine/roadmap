@@ -24,6 +24,9 @@
 * Payback amount*
 * Footer Notes
 * Delivery Details
+  * Contact Person Name
+  * Mobile Number
+  * Home Address
 
 ####Sales Order Schema:
 ***
@@ -39,6 +42,9 @@
 * Tax Amount [Sales Tax, Service Tax, VAT]
 * Net Amount Paid
 * Delivery Details
+  * Contact Person Name
+  * Mobile Number
+  * Home Address 
 * Payment
   * Status [Paid, On door delivery, Monthly Pay]
   * Mode [Cash, Cheque]
@@ -48,5 +54,5 @@
 ***
 * Product Name [if no particular product name is applicable then category along with company will be chosen as product name]
 * Product Unit
-* Product Description [Product Name ~  Size]
-* MRP
+* Product Description [Product Name ~  Unit]
+* MRP []
