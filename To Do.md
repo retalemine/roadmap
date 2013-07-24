@@ -12,3 +12,6 @@
   * Sample program to complete the study
 * Study of internationalization
   * Sample program to complete the study
+* Study on using Tamil keyboard
+  * Sample program to complete the study
+* UI design - sketch preparation
