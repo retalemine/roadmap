@@ -1,6 +1,6 @@
 ###Action Items:
 ---
-* Give a try for each framework and understand the pros and cons, modules relation and enhanceability across release.
+* Give a try for each framework and understand the pros and cons, modules relation and enhanceability across releases.
   * Have a UI collecting items with price for billing and save it in billing schema
      * Setup a project using Tapestry framework 
      * Setup a project using Play framework 
