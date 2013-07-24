@@ -41,13 +41,3 @@
 * Business and data layer be available as a standard jar
 * Project setup should always start from maven archetype
 * Business layer be first created
-
-###Action Items:
----
-* Give a try for each framework and understand the pros and cons
-* Have a UI collecting items with price for billing and save it in billing schema.
-  * Setup a project using Tapestry framework 
-  * Setup a project using Play framework 
-  * Setup a project using vaadin framework 
-  * Setup a project using bootstrap framework 
-  * Setup a project using spring framework 
