@@ -53,7 +53,7 @@
 
 ###Release 10.0:
 ---
-* Gift and rewards
+* Gift, Coupons and rewards
 
 
 ===
@@ -205,4 +205,4 @@
 ###Release 10.0: 
 ---
 ####Use cases:
-* Gift and rewards
+* Gift, Coupons and rewards
