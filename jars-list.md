@@ -8,8 +8,10 @@
 * com.google.zxing.oned.Code39Writer
 
 ###Spring configuration:
+---
 web.xml
-  <listener>
+```
+	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 		starts Spring container -> reads that file, finds your classes, instantiates them and wires
 	</listener>
@@ -18,8 +20,9 @@ web.xml
 		<param-value>
 			classpath:*.xml </param-value>
 	</context-param>
-	
+```	
 *.xml
+```
 	<import resource="classpath:*.xml" />
 	<util:properties id="*" location="classpath:*.properties" />
 	<util:list id="applicationPropertyFiles">
@@ -126,8 +129,11 @@ web.xml
 		<aop:pointcut id="txListener_Tx"
 			expression="execution(* com.*receiveMessage(..))" />		
 		<aop:advisor advice-ref="txListenerAdvice" pointcut-ref="txListener_Tx" />	
-	</aop:config> 	
+	</aop:config>
+```	
 jndi-jms.properties:
+```
 	java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory
 	java.naming.factory.url.pkgs=org.jnp.interfaces:org.jboss.naming
 	java.naming.provider.url=localhost:1099
+```
