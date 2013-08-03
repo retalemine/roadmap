@@ -55,6 +55,10 @@
 ---
 * Gift, Coupons and rewards
 
+###Release 11.0:
+---
+* Shopping style
+  * Recipes based add to cart item list
 
 ===
 
