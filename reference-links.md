@@ -31,5 +31,6 @@
   * https://code.google.com/p/run-jetty-run/
   * http://www.eclipse.org/egit/
   * http://www.eclipse.org/m2e-wtp/
+  * http://marketplace.eclipse.org/content/eclipse-4-tools-lightweight-css-editor
 
 
