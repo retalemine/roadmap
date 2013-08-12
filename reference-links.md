@@ -32,5 +32,6 @@
   * http://www.eclipse.org/egit/
   * http://www.eclipse.org/m2e-wtp/
   * http://marketplace.eclipse.org/content/eclipse-4-tools-lightweight-css-editor
+  * http://blog.oio.de/2012/08/23/dynamic-reloading-of-vaadin-applications-with-maven-and-eclipse/
 
 
