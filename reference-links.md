@@ -32,9 +32,8 @@
   * http://www.eclipse.org/egit/
   * http://www.eclipse.org/m2e-wtp/
   * http://marketplace.eclipse.org/content/eclipse-4-tools-lightweight-css-editor
-  * http://blog.oio.de/2012/08/23/dynamic-reloading-of-vaadin-applications-with-maven-and-eclipse/
 
 * Vaadin
   * http://bluegulf.wordpress.com/2012/10/18/tutorial-of-setting-up-eclipsemavenvaadinjetty-project-ide-2/
-
+  * http://blog.oio.de/2012/08/23/dynamic-reloading-of-vaadin-applications-with-maven-and-eclipse/
 
