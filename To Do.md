@@ -1,6 +1,10 @@
 ###Action Items:
 ---
 * Give a try for each framework and understand the pros and cons, modules relation and enhanceability across releases.
+  * Create the DB schema for product and billing 
+  * Create a BL layer accessing DB for following operations
+     * Create / update product collection
+     * Create a billing collection
   * Have a UI collecting items with price for billing and save it in billing schema
      * Setup a project using vaadin framework 
      * Setup a project using Tapestry framework 
