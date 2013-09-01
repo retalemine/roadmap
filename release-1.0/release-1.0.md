@@ -7,12 +7,12 @@
 ===
 ###Use-Cases:
 ---
-1. A new product getting entered for the first time. [_Only single price_]
-* An existing product in different unit getting entered for the first time. [_Only single price_]
-* An existing product with new price getting added along with old price, making it as list. [_convert to unbounded price_]
-* An existing product with revised price getting overwritten over old price. [_Only single price_]
-* Delete an outdated price detail from an existing product set. [_remains as unbounded category_]
-* Mark a product type detail as outdate in collection. [_remains passive in collection_]
+1. A new product getting entered for the first time. [ _Only single price_ ]
+* An existing product in different unit getting entered for the first time. [ _Only single price_ ]
+* An existing product with new price getting added along with old price, making it as list. [ _convert to unbounded price_ ]
+* An existing product with revised price getting overwritten over old price. [ _Only single price_ ]
+* Delete an outdated price detail from an existing product set. [ _remains as unbounded category_ ]
+* Mark a product type detail as outdate in collection. [ _remains passive in collection_ ]
 
 ===
 ###Schema-Definition:
