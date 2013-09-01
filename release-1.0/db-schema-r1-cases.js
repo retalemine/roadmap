@@ -171,4 +171,140 @@ db.productSet1.update(
 	upsert:true,
 	multi:true
 })
+///////////////////////////////////////////////////////////////////////////////
+//////CASE 2: SCHEMA HOLDS DIF PRODUCT TYPE IN DIFF RECORD SET ////////////////
+///////////////////////////////////////////////////////////////////////////////
 
+///////////////////////////////////////////////////////////////////////////////
+//////////////////////////////INSERT///////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////USE CASE - 1//////////////////////////////////////
+//////A PRODUCT WITH SINGLE UNIT OF VOL AND ONLY ONE VALID PRICE AT A TIME ////
+///////////////////////////////////////////////////////////////////////////////
+db.productSet2.insert({
+        pName: "Sugar",
+        pUnit: {
+                val: 1,
+                unit: "kg"
+        },
+        pPrice: [{
+                price: 50,
+                unit: "Rs"
+        }],
+        pActive: 1,
+	dateCMA : new Date()
+})
+/////////////////////////////USE CASE - 2//////////////////////////////////////
+////A PRODUCT WITH DIFF UNIT OF VOL AND POSSIBLY MULTI PRICE OVER DIFF STOCK///
+///////////////////////////////////////////////////////////////////////////////
+db.productSet2.insert({
+        pName: "Old Cinthol",
+        pUnit: {
+                val: "small",
+                unit: "size"
+        },
+        pPrice: [{
+                price: 10,
+                unit: "Rs"
+        }],
+        pActive: 1,
+	dateCMA : new Date()
+})
+db.productSet2.insert({
+        pName: "Old Cinthol",
+        pUnit: {
+                val: "normal",
+                unit: "size"
+        },
+        pPrice: [{
+                price: 23,
+                unit: "Rs"
+        }],
+        pActive: 1,
+	dateCMA : new Date()
+})
+///////////////////////////////////////////////////////////////////////////////
+//////////////////////////////UPDATE///////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////USE CASE - 3//////////////////////////////////////
+//////////ADDING NEW PRICE TO EXISTING PRICE TO MAKE IT AS LIST////////////////
+///////////////////////////////////////////////////////////////////////////////
+db.productSet2.update({
+        pName: "Old Cinthol",
+        'pUnit.val': "small",
+        'pUnit.unit': "size"
+}, {
+        $addToSet: {
+                pPrice: {
+                        price: 12,
+                        unit: "Rs"
+                }
+        },
+	$set:{
+		dateCMA : new Date()
+	}
+}, {
+        upsert: true,
+        multi: true
+})
+/////////////////////////////USE CASE - 4//////////////////////////////////////
+/////////////OVERWRITTING REVISED PRICE OVER EXISTING PRICE////////////////////
+///////////////////////////////////////////////////////////////////////////////
+db.productSet2.update({
+        pName: "Sugar",
+        'pUnit.val': 1,
+        'pUnit.unit': "kg"
+}, {
+        $set: {
+                pPrice: [{
+                        price: 45,
+                        unit: "Rs"
+                }],
+		dateCMA : new Date()
+        }
+}, {
+        upsert: true,
+        multi: true
+})
+/////////////////////////////USE CASE - 5//////////////////////////////////////
+////////DELETING AN OUTDATED PRICE FROM THE LIST OF PRICES/////////////////////
+///////////////////////////////////////////////////////////////////////////////
+db.productSet2.update({
+        pName: "Old Cinthol",
+        'pUnit.val': "small",
+        'pUnit.unit': "size"
+}, {
+        $pull: {
+                pPrice: {
+                        price: 10,
+                        unit: "Rs"
+                }
+        },
+	$set:{
+		dateCMA : new Date()
+	}
+}, {
+        upsert: true,
+        multi: true
+})
+/////////////////////////////USE CASE - 6//////////////////////////////////////
+////////UPDATE A PRODUCT DETAIL TO BE OUTDATED IN THE COLLECTION///////////////
+///////////////////////////////////////////////////////////////////////////////
+db.productSet2.update({
+        pName: "Old Cinthol",
+        'pUnit.val': "small",
+        'pUnit.unit': "size"
+}, {
+	$set:{
+		pActive : 0,
+		dateCMA : new Date()
+	}
+}, {
+        upsert: false,
+        multi: true
+})
+///////////////////////////////////////////////////////////////////////////////
+///////$exists: true///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
