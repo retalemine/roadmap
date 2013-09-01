@@ -63,6 +63,6 @@
 ####Product Schema (Inventory Creation Schema):
 ***
 * Product Name [if no particular product name is applicable then category along with company will be chosen as product name]
-* Product Unit
-* Product Description [Product Name ~  Unit]
-* MRP []
+* Product Unit [kg, lt, size]
+* Price []
+* Date [Created/Modified/Accessed]
