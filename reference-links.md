@@ -37,3 +37,6 @@
   * http://bluegulf.wordpress.com/2012/10/18/tutorial-of-setting-up-eclipsemavenvaadinjetty-project-ide-2/
   * http://blog.oio.de/2012/08/23/dynamic-reloading-of-vaadin-applications-with-maven-and-eclipse/
 
+* WCS
+  * http://www-03.ibm.com/software/products/us/en/websphere-commerce
+
