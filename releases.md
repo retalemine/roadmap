@@ -59,15 +59,6 @@
 * Multiple printer support
 * Multi language support
 
-####Action items:
-* General product schema design
-* General bill schema design
-* BL layer creation
-* UI design
-* UI layer creation
-* Printer support configuration
-* Multi language implementation
-
 ###Release 2.0:
 ####Use cases:
 1. Purchase order tracking [Single/Multi Terminal[Concurrency]]
@@ -90,13 +81,6 @@
   * For every return in delivery the sales order is updated accordingly.
 * Sales closure
   * Inventory updated based on every sales order.
-
-####Action items:
-* Schema design in MongoDB
-* Use case scenarios for each functionality
-* Mongo Query for each functionality
-* Overall architecture with distributed components and multi terminals
-* User interface design for each functionality
 
 ###Release 3.0:
 ####Use cases:

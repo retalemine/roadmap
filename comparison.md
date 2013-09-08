@@ -1,4 +1,3 @@
-
 Desktop Application | Web Application
 ---|---
 Requires client interface application. No dependency on browser. | No specific cleint application. Dependent on browser. Plugin optional.

@@ -243,7 +243,8 @@ db.productSet2.update({
                 }
         },
 	$set:{
-		dateCMA : new Date()
+		dateCMA : new Date(),
+		pActive : 1
 	}
 }, {
         upsert: true,
@@ -262,7 +263,8 @@ db.productSet2.update({
                         price: 45,
                         unit: "Rs"
                 }],
-		dateCMA : new Date()
+		dateCMA : new Date(),
+		pActive : 1
         }
 }, {
         upsert: true,
@@ -283,7 +285,8 @@ db.productSet2.update({
                 }
         },
 	$set:{
-		dateCMA : new Date()
+		dateCMA : new Date(),
+		pActive : 1
 	}
 }, {
         upsert: true,
@@ -305,6 +308,30 @@ db.productSet2.update({
         upsert: false,
         multi: true
 })
+/////////////////////////////USE CASE - 7//////////////////////////////////////
+/////////TRYING TO FIND AN ABSCENT PRODUCT AND GETTING INSERTED ///////////////
+///////////////////////////////////////////////////////////////////////////////
+db.productSet2.update({
+        pName: "Hamam",
+        'pUnit.val': "big",
+        'pUnit.unit': "size"
+}, {
+        $addToSet: {
+                pPrice: {
+                        price: 35,
+                        unit: "Rs"
+                }
+        },
+	$set:{
+		dateCMA : new Date(),
+		pActive : 1
+	}
+}, {
+        upsert: true,
+        multi: true
+})
 ///////////////////////////////////////////////////////////////////////////////
 ///////$exists: true///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
+
+

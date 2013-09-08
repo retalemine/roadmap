@@ -1,3 +1,16 @@
+####Action items:
+* Use case scenarios for each functionality
+* Mongo Query for each functionality
+* General product schema design
+* General bill schema design
+* Overall architecture with distributed components and multi terminals
+* BL layer creation
+* UI design for each functionality
+* UI layer creation
+* Printer support configuration
+* Multi language implementation
+
+---
 ###Design:
 * Managing price for products.
   * Products can come with price tags that shouldn't be amended overtime. [ _unbounded, as stock varies_ ]
@@ -15,57 +28,4 @@
 * Delete an outdated price detail from an existing product set. [ _remains as unbounded category_ ]
 * Mark a product type detail as outdate in collection. [ _remains passive in collection_ ]
 
----
-###Schema:
-* Product Schema
-* Sales-order schema
-  * Billing structure
 
----
-###Schema-Definition:
-####Bill structure:
-* Header Notes
-* Bill No# - Billed Date#
-  * Serial No.
-  * Product Description
-  * Unit Price(MRP)
-  * Quantity
-  * Net Price ( Quantity * Unit Price ) [-ve for return items]
-* Gross Amount
-* Tax % [Sales Tax, Service Tax, VAT]
-* Tax Amount [Sales Tax, Service Tax, VAT]
-* Net Amount Payable
-* Amount received*
-* Payback amount*
-* Footer Notes
-* Delivery Details
-  * Contact Person Name
-  * Mobile Number
-  * Home Address
-
-####Sales Order Schema:
-* Bill No.
-* Billed Date
-  * Serial No.
-  * Product Description
-  * Unit Price(MRP)
-  * Quantity
-  * Net Price (Quantity *  Unit Price)
-* Gross Amount
-* Tax % [Sales Tax, Service Tax, VAT]
-* Tax Amount [Sales Tax, Service Tax, VAT]
-* Net Amount Paid
-* Delivery Details
-  * Contact Person Name
-  * Mobile Number
-  * Home Address 
-* Payment
-  * Status [Paid, On door delivery, Monthly Pay]
-  * Mode [Cash, Cheque]
-  * Date
-
-####Product Schema (Inventory Creation Schema):
-* Product Name [if no particular product name is applicable then category along with company will be chosen as product name]
-* Product Unit [kg, lt, size]
-* Price []
-* Date [Created/Modified/Accessed]
