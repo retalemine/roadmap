@@ -8,9 +8,8 @@
   * As batch job, to process all the bills that are created after a point of time and saving the timestamp for next batch job execution.
 
 ===
-###Use-Cases:
+###Use case - 1:
 ---
-1. Use Case -1
 1. A new product getting entered for the first time. [ _Only single price_ ]
 * An existing product in different unit getting entered for the first time. [ _Only single price_ ]
 * An existing product with new price getting added along with old price, making it as list. [ _convert to unbounded price_ ]
