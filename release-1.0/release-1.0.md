@@ -19,6 +19,12 @@
   * Instantly as and when a bill is generated for all those items not suggested and for all those items whose price is changed
   * As batch job, to process all the bills that are created after a point of time and saving the timestamp for next batch job execution.
 
+Instant process | Batch process
+---|---
+tightly coupled coding | loosely coupled coding
+Can track those items that are new or with new price, thus avoids reduntant check over DB data | if to be tracked then billing schema need to be customized accordingly. if not then high chances of redundant hit over DB.
+High possibility of getting suggested in next billing | Not until the job is completed
+
 ---
 ###Use case - 1:
 1. A new product getting entered for the first time. [ _Only single price_ ]
