@@ -65,21 +65,26 @@
 ###Release 1.0:
 ---
 ####Use cases:
-* On the fly product catalog creation and suggestion
+1. On the fly product catalog creation without interfering with bill processing
+* On the fly product catalog suggestion
 * Sales tracking
-* Multi language support
+* Bill printing
 * Multiple printer support
+* Multi language support
 
 ####Action items:
-* General bill schema and general product catalog design
+* General product schema design
+* General bill schema design
+* BL layer creation
 * UI design
-* Multi language implementation
+* UI layer creation
 * Printer support configuration
+* Multi language implementation
 
 ###Release 2.0:
 ---
 ####Use cases:
-* Purchase order tracking [Single/Multi Terminal[Concurrency]]
+1. Purchase order tracking [Single/Multi Terminal[Concurrency]]
   * Feed each purchase order to application system.
   * Should be intellectual to determine duplicate feeding of a purchase order.
   * Suggestion of product on the fly.
@@ -110,7 +115,7 @@
 ###Release 3.0:
 ---
 ####Use cases:
-* Purchase order tracking [Single/Multi Terminal[Concurrency]]
+1. Purchase order tracking [Single/Multi Terminal[Concurrency]]
   * For product with barcode enable automatic detection of products from product schema, if one available.
   * Price label generation with barcode.
 * Sales order processing
@@ -123,7 +128,7 @@
 ###Release 4.0:
 ---
 ####Use cases:
-* Purchase order tracking [Single/Multi Terminal[Concurrency]]
+1. Purchase order tracking [Single/Multi Terminal[Concurrency]]
   * For each successful purchase, dealer schema is created/updated.
 * Tracking Procurement [Company/Dealer/Period/Category]
 * Order Tracking
@@ -148,7 +153,7 @@
 ###Release 5.0:
 ---
 ####Use cases:
-* Discount% suggestion @ product level (provided the feature enabled and the profit margin set (default 0%))
+1. Discount% suggestion @ product level (provided the feature enabled and the profit margin set (default 0%))
   * For any product, discount% should be suggested in such a way that the s quantity of sales order count for a particular price with n quantity items in rack(left behind after removing s quantity and pertaining to that price) 
     * If (s + n <= p (last purchase count) of that price) then the discount percentage is 0% to d% where d% discount will give up to the set min margin profit.
     * If ( s + n > p and (( s + n) – p ) < s then the least difference in unit price is chosen to be entitled as discount
@@ -179,7 +184,7 @@
 ###Release 6.0:
 ---
 ####Use cases:
-* Online catalog
+1. Online catalog
   * Search by item name.
   * Browse by item category.
 * Online order @ outlet
@@ -192,21 +197,27 @@
 ###Release 7.0:
 ---
 ####Use cases:
-* Online order placing via Cash-On-delivery
+1. Online order placing via Cash-On-delivery
 
 ###Release 8.0:
 ---
 ####Use cases:
-* Online purchase via instant payment
+1. Online purchase via instant payment
 
 ###Release 9.0:
 ---
 ####Use cases:
-* Handheld devices for purchase processing
+1. Handheld devices for purchase processing
 * Inventory management
 * Order tracking
 
 ###Release 10.0: 
 ---
 ####Use cases:
-* Gift, Coupons and rewards
+1. Gift, Coupons and rewards
+
+###Release 11.0: 
+---
+####Use cases:
+1. Recipe based shopping
+* Recommendation
