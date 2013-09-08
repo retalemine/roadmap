@@ -1,5 +1,4 @@
 ###Guidelines:
----
 * What need to be visualized ought to be persisted for future reference => what you need is what is saved!
 * Better Management of entry purchase and end sales.
 * Better visualization of customer need, market need and season sales.
@@ -12,8 +11,8 @@
   * Better risk analysis and handling.
   * Risk factors [customer satisfaction, investment, time, product expiry period, market saturation, exit criteria]
 
-###Design-factors:
 ---
+###Design-factors:
 * Cost associated with each model via each phase. 
   * Hardware and software costs.
   * Infrastructure costs like network connectivity.
@@ -24,8 +23,8 @@
 * Cross platform
 * Open source license
 
-###Guidelines for application architecture:
 ---
+###Guidelines for application architecture:
 * Communication between presentation, business, data layer
 * Loosely coupled
 * Secure
@@ -33,8 +32,8 @@
 * Zero down time
 * Cross platform compatible and should target multiple devices
 
-###Guidelines for coding:
 ---
+###Guidelines for coding:
 * Enhanceable over different release - extendability
 * Code reuse
 * Presentation be a single war
