@@ -19,11 +19,11 @@
   * Instantly as and when a bill is generated for all those items not suggested and for all those items whose price is changed
   * As batch job, to process all the bills that are created after a point of time and saving the timestamp for next batch job execution.
 
-Instant process | Batch process
----|---
-tightly coupled coding | loosely coupled coding
-Can track those items that are new or with new price, thus avoids reduntant check over DB data | if to be tracked then billing schema need to be customized accordingly. if not then high chances of redundant hit over DB.
-High possibility of getting suggested in next billing | Not until the job is completed
+Instant process | Queue service | Batch process
+---|---|---
+Tightly coupled with billing process | Involes event triggering. May interfer with billing process. Loosely coupled | Doesn't interfer with billing process. Completely loosely coupled.
+Can track those items that are new or with new price and hits DB only for those records. | Event gets triggered only for new products or products with new price. Chances are there for duplicate events getting triggered at certain intervals. | No tracking, so the job as to be run periodically irrespective of inventory up-to-date or not.
+High possibility of getting suggested in next billing | Possibility of getting suggested in next billing depends on queue performance | Not until the job is completed.
 
 ---
 ###Use case - 1:
