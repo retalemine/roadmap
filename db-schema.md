@@ -1,5 +1,4 @@
 ###Schema:
----
 * Purchase order schema
 * Dealer Schema
 * Product Schema
@@ -11,11 +10,9 @@
 * Access control schema
 * Shelf schema
 
-===
-###Schema-Definition:
 ---
+###Schema-Definition:
 ####Purchase order schema:
-***
 * Purchase Date
 * Purchase Order No. / Bill No. / Receipt No.
 * Dealer Trade Name
@@ -50,7 +47,6 @@
 * Remarks
 
 ####Dealer Schema:
-***
 * Dealer Trade Name
 * Dealer Trade No.
 * Dealer Contact No.
@@ -72,7 +68,6 @@
     * Beginning / End
 
 ####Bill structure:
-***
 * Header Notes
 * Bill No# - Billed Date#
   * Serial No.
@@ -94,7 +89,6 @@
 * Footer Notes
 
 ####Sales Order Schema:
-***
 * Bill No.
 * Billed Date
   * Serial No.
@@ -121,7 +115,6 @@
   * Date
 
 ####Customer/Organization Schema:
-***
 * Customer Id
 * Customer Name
 * Gender
@@ -138,7 +131,6 @@
 * Due Bills[ Bill details, amount, expected date of payment ]
 
 ####Product Schema (Inventory Creation Schema):
-***
 #####Cases:
 * Barcode available products:
   * Is product barcode varying as unit varies for the same product? How it is used by other retail outlet?
@@ -167,7 +159,6 @@
 * Product location []
 
 ####Event Schema:
-***
 * Event name
 * Event Date
 * Sales Period
@@ -179,7 +170,6 @@
     * Costs
 
 ####Employee Schema:
-***
 * Name
 * Contact Number
 * Contact address
@@ -201,7 +191,6 @@
   * [date of leave]
 
 ####Access control schema:
-***
 * Role Name
 * Designation
 * Read-only privileges [] 
@@ -209,7 +198,6 @@
 
 
 ####Shelf schema:
-***
 * Shelf description
 * location
 

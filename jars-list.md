@@ -1,5 +1,4 @@
 ###Barcode:
----
 * net.glxn.qrgen.QRCode
 * net.glxn.qrgen.image.ImageType
 * com.google.zxing.BarcodeFormat
@@ -7,8 +6,8 @@
 * com.google.zxing.common.BitMatrix
 * com.google.zxing.oned.Code39Writer
 
-###Spring configuration:
 ---
+###Spring configuration:
 web.xml
 ```
 	<listener>
@@ -30,13 +29,13 @@ web.xml
 		<value>classpath:*.properties</value>		
 	</util:list>
 	<context:component-scan base-package="com.*" />
-	<bean id="*" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" >		
+	<bean id="*" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" >
 		<property name="locations">
 			<list>
 				<value>classpath:*.properties</value>
 				<value>classpath:*.properties</value>
 			</list>
-    	</property>  	
+    	</property>
 		<property name="ignoreUnresolvablePlaceholders" value="true"/>
 	</bean>
 	<bean id="*" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">

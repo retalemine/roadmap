@@ -1,5 +1,4 @@
 ###Action Items:
----
 * Give a try for each framework and understand the pros and cons, modules relation and enhanceability across releases.
   * Create the DB schema for product and billing 
   * Create a BL layer accessing DB for following operations

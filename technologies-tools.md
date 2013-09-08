@@ -1,5 +1,4 @@
 ###Technologies-tools:
----
 Category | Chosen | Other choice
 ---|:---:|---
 UI components | Vaadin | GWT, Dojo, SiteMesh, Bootstrap

@@ -1,22 +1,18 @@
 ###Release 1.0:
----
 * Bill processing
 
 ###Release 2.0:
----
 * Purchase processing
 * Inventory creation
 * Bill processing
 * Order tracking
 
 ###Release 3.0:
----
 * Barcode based processing
 * Price label generation
 * User role based access restriction
 
 ###Release 4.0:
----
 * Dealer tracking
 * Customer tracking
 * Employee tracking & payroll
@@ -24,7 +20,6 @@
 * Purchase suggestion
 
 ###Release 5.0:
----
 * Discount sales 
 * Return and claim
 * Damage and loss mitigation
@@ -32,38 +27,30 @@
 * Payment via card
 
 ###Release 6.0:
----
 * Online catalog
 * Online shopping @ outlet
 * Online profile
 
 ###Release 7.0:
----
 * Online shopping @ home via cash-on-delivery mode
 
 ###Release 8.0:
----
 * Online shopping @ home via instant payment mode
 
 ###Release 9.0:
----
 * Handheld devices for purchase processing
 * Inventory management
 * Order tracking
 
 ###Release 10.0:
----
 * Gift, Coupons and rewards
 
 ###Release 11.0:
----
 * Shopping style
   * Recipes based add to cart item list
 
-===
-
-###Release 1.0:
 ---
+###Release 1.0:
 ####Use cases:
 1. On the fly product catalog creation without interfering with bill processing
 * On the fly product catalog suggestion
@@ -82,7 +69,6 @@
 * Multi language implementation
 
 ###Release 2.0:
----
 ####Use cases:
 1. Purchase order tracking [Single/Multi Terminal[Concurrency]]
   * Feed each purchase order to application system.
@@ -113,7 +99,6 @@
 * User interface design for each functionality
 
 ###Release 3.0:
----
 ####Use cases:
 1. Purchase order tracking [Single/Multi Terminal[Concurrency]]
   * For product with barcode enable automatic detection of products from product schema, if one available.
@@ -126,7 +111,6 @@
   * Access control to action in a functionality should be confined to specific user group.
 
 ###Release 4.0:
----
 ####Use cases:
 1. Purchase order tracking [Single/Multi Terminal[Concurrency]]
   * For each successful purchase, dealer schema is created/updated.
@@ -151,7 +135,6 @@
 * Export and print of reports.
 
 ###Release 5.0:
----
 ####Use cases:
 1. Discount% suggestion @ product level (provided the feature enabled and the profit margin set (default 0%))
   * For any product, discount% should be suggested in such a way that the s quantity of sales order count for a particular price with n quantity items in rack(left behind after removing s quantity and pertaining to that price) 
@@ -182,7 +165,6 @@
 * Payment via card
 
 ###Release 6.0:
----
 ####Use cases:
 1. Online catalog
   * Search by item name.
@@ -195,29 +177,25 @@
   * Purchase history.
 
 ###Release 7.0:
----
 ####Use cases:
 1. Online order placing via Cash-On-delivery
 
 ###Release 8.0:
----
 ####Use cases:
 1. Online purchase via instant payment
 
 ###Release 9.0:
----
 ####Use cases:
 1. Handheld devices for purchase processing
 * Inventory management
 * Order tracking
 
 ###Release 10.0: 
----
 ####Use cases:
 1. Gift, Coupons and rewards
 
 ###Release 11.0: 
----
 ####Use cases:
-1. Recipe based shopping
+1. Shopping style - Recipe based shopping
 * Recommendation
+
