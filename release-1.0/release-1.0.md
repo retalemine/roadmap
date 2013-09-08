@@ -21,6 +21,7 @@
 * Sales-order schema
   * Billing structure
 
+---
 ###Schema-Definition:
 ####Bill structure:
 * Header Notes
@@ -64,7 +65,6 @@
   * Date
 
 ####Product Schema (Inventory Creation Schema):
-***
 * Product Name [if no particular product name is applicable then category along with company will be chosen as product name]
 * Product Unit [kg, lt, size]
 * Price []
