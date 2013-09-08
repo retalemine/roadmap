@@ -1,5 +1,4 @@
 ###Product Category:
-===
 ####[Provision:](#provision)
 * Groceries
 * Beverages
@@ -33,7 +32,6 @@
 
 ---
 ###Products:
-===
 <h4 id="provision">Provision:</h4>
 * Groceries
   * Pulses
