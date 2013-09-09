@@ -1,6 +1,6 @@
 ####Action items:
 * Use case scenarios for each functionality
-* Mongo Query for each functionality
+* Mongo Query for each use cases
 * General product schema design
 * General bill schema design
 * Overall architecture with distributed components and multi terminals
@@ -29,7 +29,7 @@ Can have additional flag to remove outdated prices. | Can have additional flag t
 * Unwinded rendering of inventory data.
 
 ---
-###Use case 1:
+###Use cases under Functionality 1:
 1. A product getting added for the first time.
 * A product with different unit getting added for the first time.
 * A product with different price getting added.
@@ -39,7 +39,7 @@ Can have additional flag to remove outdated prices. | Can have additional flag t
 * A single priced product with different price getting updated.
 * A single priced product with different price getting added and converted to unbounded price.
 
-###Use case 2:
+###Use cases under Functionality 2:
 1. A product getting added for the first time.
 * A product with different unit getting added for the first time.
 * A product with different price getting added.
@@ -49,34 +49,34 @@ Can have additional flag to remove outdated prices. | Can have additional flag t
 * A single priced product with different price getting updated.
 * A single priced product with different price getting added and converted to unbounded price.
 
-###Use case 3:
+###Use cases under Functionality 3:
 1. List every entry in DB.
 * Search product based on name.
 * Search product based on name and units.
 * Search unit priced products.
 
-###Use case 4:
+###Use cases under Functionality 4:
 1. On deleting a single priced product, the product itself gets deleted.
 * On deleting a unbounded priced product, the outdated price alone gets removed.
 * Converting a unbounded priced product to single priced product.
 * Converting a single priced product to unbounded priced product.
 
-###Use case 5:
+###Use cases under Functionality 5:
 1. Ajax call based on characters entered and search inventory based on name and unit.
 
-###Use case 6:
+###Use cases under Functionality 6:
 1. Every bill should get saved to sales-order schema.
 * Every processed bill should be rendered for reference.
 * Searchable by date.
 * Searchable by bill amount.
 * Searchable by date and bill amount.
 
-###Use case 7:
+###Use cases under Functionality 7:
 1. Bill printing
 
-###Use case 8:
+###Use cases under Functionality 8:
 1. Multiple printer support
 
-###Use case 9:
+###Use cases under Functionality 9:
 1. Multi language support
 

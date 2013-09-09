@@ -53,7 +53,7 @@
 
 ---
 ###Release 1.0:
-####Use cases:
+####Functionalities:
 1. On the fly inventory creation without interfering with bill processing
 * Manual creation of inventory
 * View inventory
@@ -65,7 +65,7 @@
 * Multi language support
 
 ###Release 2.0:
-####Use cases:
+####Functionalities:
 1. Purchase order tracking [Single/Multi Terminal[Concurrency]]
   * Feed each purchase order to application system.
   * Should be intellectual to determine duplicate feeding of a purchase order.
@@ -92,7 +92,7 @@
   * Inventory updated based on every sales order.
 
 ###Release 3.0:
-####Use cases:
+####Functionalities:
 1. Purchase order tracking [Single/Multi Terminal[Concurrency]]
   * For product with barcode enable automatic detection of products from product schema, if one available.
   * Price label generation with barcode.
@@ -104,7 +104,7 @@
   * Access control to action in a functionality should be confined to specific user group.
 
 ###Release 4.0:
-####Use cases:
+####Functionalities:
 1. Purchase order tracking [Single/Multi Terminal[Concurrency]]
   * For each successful purchase, dealer schema is created/updated.
 * Tracking Procurement [Company/Dealer/Period/Category]
@@ -128,7 +128,7 @@
 * Export and print of reports.
 
 ###Release 5.0:
-####Use cases:
+####Functionalities:
 1. Discount% suggestion @ product level (provided the feature enabled and the profit margin set (default 0%))
   * For any product, discount% should be suggested in such a way that the s quantity of sales order count for a particular price with n quantity items in rack(left behind after removing s quantity and pertaining to that price) 
     * If (s + n <= p (last purchase count) of that price) then the discount percentage is 0% to d% where d% discount will give up to the set min margin profit.
@@ -158,7 +158,7 @@
 * Payment via card
 
 ###Release 6.0:
-####Use cases:
+####Functionalities:
 1. Online catalog
   * Search by item name.
   * Browse by item category.
@@ -170,25 +170,25 @@
   * Purchase history.
 
 ###Release 7.0:
-####Use cases:
+####Functionalities:
 1. Online order placing via Cash-On-delivery
 
 ###Release 8.0:
-####Use cases:
+####Functionalities:
 1. Online purchase via instant payment
 
 ###Release 9.0:
-####Use cases:
+####Functionalities:
 1. Handheld devices for purchase processing
 * Inventory management
 * Order tracking
 
 ###Release 10.0: 
-####Use cases:
+####Functionalities:
 1. Gift, Coupons and rewards
 
 ###Release 11.0: 
-####Use cases:
+####Functionalities:
 1. Shopping style - Recipe based shopping
 * Recommendation
 
