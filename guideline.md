@@ -4,7 +4,7 @@
 * Better visualization of customer need, market need and season sales.
 * Better tracking and projection of sales and company growth.
 * Efficient operational cost via right purchase ensured by chosen products/company/dealer/market condition.
-* Maximum profit via customer satisfaction, retain customer, customer demand, market demand, and season sales.  
+* Maximum profit via customer satisfaction, retain customer, customer demand, market demand, and season sales.
 * Earliest entry to quench thirst of market. 
   * Product or technology shouldn’t be the bottleneck to take the end products to end users. 
   * Should be a fair and cost-effective marketing.
@@ -31,6 +31,15 @@
 * Scalable
 * Zero down time
 * Cross platform compatible and should target multiple devices
+
+Desktop Application | Web Application
+---|---
+Requires client interface application. No dependency on browser. | No specific cleint application. Dependent on browser. Plugin optional.
+Runs as separate process. | Runs as part of browser request handling.
+Client side installation required. | Browser needed at client side.
+Lacks open source Rich UI. | Rich UI available.
+Code w.r.t network connection, concurrency, session needs extra care. | Works over http and concurrency and session are implicitly handled 
+Accessible only from client interface. | Accessible from any browser and from anywhere.
 
 ---
 ###Guidelines for coding:
