@@ -65,7 +65,11 @@ Can have additional flag to remove outdated prices. | Can have additional flag t
 1. Ajax call based on characters entered and search inventory based on name and unit.
 
 ###Use case 6:
-1. Every bill should get saved to sales-order schema
+1. Every bill should get saved to sales-order schema.
+* Every processed bill should be rendered for reference.
+* Searchable by date.
+* Searchable by bill amount.
+* Searchable by date and bill amount.
 
 ###Use case 7:
 1. Bill printing
