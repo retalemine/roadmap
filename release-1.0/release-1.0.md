@@ -26,10 +26,11 @@ _Tightly coupled with billing process._ | Involes event triggering. May interfer
 Can track those items that are new or with new price and hits DB only for those records. | Event gets triggered only for new products or products with new price. Chances are there for duplicate events getting triggered at certain intervals. | No tracking, so the job as to be run periodically irrespective of inventory up-to-date or not. _High possibility of redundant hit to DB._
 High possibility of getting suggested in next billing. | Possibility of getting suggested in next billing depends on queue performance. | Not until the job is completed.
 Not so easy customization. | Event can be customized. | Highly customizable as standalone.
-Can mark single priced products. Thus can also remove old prices. | Can mark single priced products. Thus can also remove old prices. | Not possible to mark single priced products.
+Can mark single priced products and can also remove old prices. But interfer with billing process. | Can mark single priced products and can also remove old prices. Achieved by editing the data before getting pushed to queue. | Not possible to mark single priced products.
 Can have additional flag to remove outdated prices. | Can have additional flag to remove outdated prices. | Not possible to remove outdated prices.
 
 * Archival of products and price.
+
 ---
 ###Use case - 1:
 1. A new product getting entered for the first time. [ _Only single price_ ]
