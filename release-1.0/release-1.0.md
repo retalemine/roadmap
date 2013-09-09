@@ -12,9 +12,6 @@
 
 ---
 ###Design:
-* Managing price for products.
-  * Products can come with price tags that shouldn't be amended overtime. [ _unbounded, as stock varies_ ]
-  * Products whose price tag has to be amended overtime. [ _single priced, market driven_ ]
 * Product catalog creation.
   * Instantly as and when a bill is generated for all those items not suggested and for all those items whose price is changed.
   * As queue processing, pushing job to queue for all those items not suggested and for all those items whose price is changed.
@@ -28,8 +25,6 @@ High possibility of getting suggested in next billing. | Possibility of getting 
 Not so easy customization. | Event can be customized. | Highly customizable as standalone.
 Can mark single priced products and can also remove old prices. But interfer with billing process. | Can mark single priced products and can also remove old prices. Achieved by editing the data before getting pushed to queue. | Not possible to mark single priced products.
 Can have additional flag to remove outdated prices. | Can have additional flag to remove outdated prices. | Not possible to remove outdated prices.
-
-* Archival of products and price.
 
 ---
 ###Use case - 1:

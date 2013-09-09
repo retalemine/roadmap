@@ -3,7 +3,9 @@
 
 ###Release 2.0:
 * Purchase processing
+* Managing price for products
 * Inventory creation
+* Archival of data for analytic purpose
 * Bill processing
 * Order tracking
 
@@ -65,6 +67,9 @@
   * Feed each purchase order to application system.
   * Should be intellectual to determine duplicate feeding of a purchase order.
   * Suggestion of product on the fly.
+* Managing price for products.
+  * Products can come with price tags that shouldn't be amended overtime. [ _unbounded, as stock varies_ ]
+  * Products whose price tag has to be amended overtime. [ _single priced, market driven_ ]
 * Inventory creation/update via closure of purchase order
   * For each product in the successful purchase order, the inventory is either created or updated.
   * Max discount% is set accordingly to determine CP.
@@ -72,6 +77,7 @@
   * For each product in the shelf, the inventory is either created or updated.
   * Max discount% is not set if CP is undetermined.
 * Inventory creation on the fly, for product getting billed without an entry in product schema.[ purchase schema won't be updated ]
+* Archival of outdated products and outdated price for analytic.
 * Cash & Carry Order
   * For every order placed, sales order schema is created and a bill is generated as paid.
 * Door Delivery Order
