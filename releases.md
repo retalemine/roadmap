@@ -54,8 +54,11 @@
 ---
 ###Release 1.0:
 ####Use cases:
-1. On the fly product catalog creation without interfering with bill processing
-* On the fly product catalog suggestion
+1. On the fly inventory creation without interfering with bill processing
+* Manual creation of inventory
+* View inventory
+* Edit inventory
+* On the fly product suggestion
 * Sales tracking
 * Bill printing
 * Multiple printer support

@@ -26,13 +26,53 @@ Not so easy customization. | Event can be customized. | Highly customizable as s
 Can mark single priced products and can also remove old prices. But interfer with billing process. | Can mark single priced products and can also remove old prices. Achieved by editing the data before getting pushed to queue. | Not possible to mark single priced products.
 Can have additional flag to remove outdated prices. | Can have additional flag to remove outdated prices. | Not possible to remove outdated prices.
 
----
-###Use case - 1:
-1. A new product getting entered for the first time. [ _Only single price_ ]
-* An existing product in different unit getting entered for the first time. [ _Only single price_ ]
-* An existing product with new price getting added along with old price, making it as list. [ _convert to unbounded price_ ]
-* An existing product with revised price getting overwritten over old price. [ _Only single price_ ]
-* Delete an outdated price detail from an existing product set. [ _remains as unbounded category_ ]
-* Mark a product type detail as outdate in collection. [ _remains passive in collection_ ]
+* Unwinded rendering of inventory data.
 
+---
+###Use case 1:
+1. A product getting added for the first time.
+* A product with different unit getting added for the first time.
+* A product with different price getting added.
+* A product with different price getting added and marked to delete other price details.
+* A product getting added for the first time and marked as single priced.
+* A product with different unit getting added for the first time and marked as single priced.
+* A single priced product with different price getting updated.
+* A single priced product with different price getting added and converted to unbounded price.
+
+###Use case 2:
+1. A product getting added for the first time.
+* A product with different unit getting added for the first time.
+* A product with different price getting added.
+* A product with different price getting added and marked to delete other price details.
+* A product getting added for the first time and marked as single priced.
+* A product with different unit getting added for the first time and marked as single priced.
+* A single priced product with different price getting updated.
+* A single priced product with different price getting added and converted to unbounded price.
+
+###Use case 3:
+1. List every entry in DB.
+* Search product based on name.
+* Search product based on name and units.
+* Search unit priced products.
+
+###Use case 4:
+1. On deleting a single priced product, the product itself gets deleted.
+* On deleting a unbounded priced product, the outdated price alone gets removed.
+* Converting a unbounded priced product to single priced product.
+* Converting a single priced product to unbounded priced product.
+
+###Use case 5:
+1. Ajax call based on characters entered and search inventory based on name and unit.
+
+###Use case 6:
+1. Every bill should get saved to sales-order schema
+
+###Use case 7:
+1. Bill printing
+
+###Use case 8:
+1. Multiple printer support
+
+###Use case 9:
+1. Multi language support
 
