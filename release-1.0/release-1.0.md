@@ -16,9 +16,9 @@
   * Products can come with price tags that shouldn't be amended overtime. [ _unbounded, as stock varies_ ]
   * Products whose price tag has to be amended overtime. [ _single priced, market driven_ ]
 * Product catalog creation.
-  * Instantly as and when a bill is generated for all those items not suggested and for all those items whose price is changed
+  * Instantly as and when a bill is generated for all those items not suggested and for all those items whose price is changed.
+  * As queue processing, pushing job to queue for all those items not suggested and for all those items whose price is changed.
   * As batch job, to process all the bills that are created after a point of time and saving the timestamp for next batch job execution.
-* Archival of products and price.
 
 Instant process | Queue service | Batch process
 ---|---|---
@@ -29,6 +29,7 @@ Not so easy customization. | Event can be customized. | Highly customizable as s
 Can mark single priced products. Thus can also remove old prices. | Can mark single priced products. Thus can also remove old prices. | Not possible to mark single priced products.
 Can have additional flag to remove outdated prices. | Can have additional flag to remove outdated prices. | Not possible to remove outdated prices.
 
+* Archival of products and price.
 ---
 ###Use case - 1:
 1. A new product getting entered for the first time. [ _Only single price_ ]
