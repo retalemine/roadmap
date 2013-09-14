@@ -14,7 +14,7 @@
 ###Design:
 * Product catalog creation.
   * Instantly as and when a bill is generated for all those items not suggested and for all those items whose price is changed.
-  * As queue processing, pushing job to queue for all those items not suggested and for all those items whose price is changed.
+  * As queue processing, pushing job to queue for all those items not suggested and for all those items whose price is changed. Jobs can either be pushed straight away to queue or made to go through a staging phase where additional flag can be passed.
   * As batch job, to process all the bills that are created after a point of time and saving the timestamp for next batch job execution.
 
 Instant process | Queue service | Batch process
@@ -34,8 +34,8 @@ Can have additional flag to remove outdated prices. | Can have additional flag t
 * A product with different unit getting added for the first time.
 * A product with different price getting added.
 * A product with different price getting added and marked to delete other price details.
+* A product with different price getting added and marked to delete other price details by marking it as single priced. 
 * A product getting added for the first time and marked as single priced.
-* A product with different unit getting added for the first time and marked as single priced.
 * A single priced product with different price getting updated.
 * A single priced product with different price getting added and converted to unbounded price.
 

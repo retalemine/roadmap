@@ -5,10 +5,15 @@
 
 ###Schema-Definition:
 ####Product Schema (Inventory Creation Schema):
-* Product Name [if no particular product name is applicable then category along with company will be chosen as product name]
-* Product Unit [kg, lt, size]
-* Price []
-* Date [Created/Modified/Accessed]
+* Product Name (pName)
+* Product Unit (pUnit)
+  * value (val) [[(0-9)*][(0-9)*][small,medium,big]]
+  * unit (unit) [kg, lt, size]
+* Single priced (marketPriced)
+* Price (pPrice) []
+  * price [(0-9)*]
+  * unit [Rs]
+* Date (dateCM) [Created/Modified]
 
 ####Bill structure:
 * Header Notes
