@@ -14,7 +14,7 @@
 ###Design:
 * Product catalog creation.
   * Instantly as and when a bill is generated for all those items not suggested and for all those items whose price is changed.
-  * As queue processing, pushing job to queue for all those items not suggested and for all those items whose price is changed. Jobs can either be pushed straight away to queue or made to go through a staging phase where additional flag can be passed.
+  * As queue processing, pushing job to queue for all those items not suggested and for all those items whose price is changed. Jobs can either be pushed straight away to queue or made to go through a staging phase where additional flag can be passed. The staging phase allows data in queue to be flagged before being processed by listener.
   * As batch job, to process all the bills that are created after a point of time and saving the timestamp for next batch job execution.
 
 Instant process | Queue service | Batch process
