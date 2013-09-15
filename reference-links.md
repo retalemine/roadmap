@@ -22,6 +22,9 @@
 * Design Pattern
   * http://en.wikipedia.org/wiki/Design_pattern_%28computer_science%29
   * http://www.objectmentor.com/resources/articles/ocp.pdf
+  * http://www.codeproject.com/KB/architecture/
+  * http://www.oodesign.com/
+  * http://elegantcode.com/2009/01/07/ioc-libraries-compared/
 
 * General
   * http://www.slideshare.net/mraible
