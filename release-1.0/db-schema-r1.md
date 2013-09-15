@@ -1,6 +1,6 @@
 ###Schema:
-* Product Schema
-* Sales-order schema
+* Product Schema (products)
+* Sales-order schema (salesorders)
   * Billing structure
 
 ###Schema-Definition:
