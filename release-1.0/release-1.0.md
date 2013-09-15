@@ -44,8 +44,8 @@ Can have additional flag to remove outdated prices. | Can have additional flag t
 * A product with different unit getting added for the first time.
 * A product with different price getting added.
 * A product with different price getting added and marked to delete other price details.
+* A product with different price getting added and marked to delete other price details by marking it as single priced. 
 * A product getting added for the first time and marked as single priced.
-* A product with different unit getting added for the first time and marked as single priced.
 * A single priced product with different price getting updated.
 * A single priced product with different price getting added and converted to unbounded price.
 
