@@ -1,5 +1,5 @@
 ####Action items:
-* Use case scenarios for each functionality
+* Use case scenarios for each functionality ![](https://raw.github.com/retalemine/roadmap/master/images/tick-16x12.png)
 * Mongo Query for each use cases
 * General product schema design
 * General bill schema design
