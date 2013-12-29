@@ -1,8 +1,10 @@
+[tick]: https://raw.github.com/retalemine/roadmap/master/images/tick-16x12.png "Done"
+
 ####Action items:
-* Use case scenarios for each functionality ![](https://raw.github.com/retalemine/roadmap/master/images/tick-16x12.png)
-* Mongo Query for each use cases
-* General product schema design
-* General bill schema design
+* Use case scenarios for each functionality ![][tick]
+* Mongo Query for each use cases ![][tick]
+* General product schema design ![][tick]
+* General bill schema design ![][tick]
 * Overall architecture with distributed components and multi terminals
 * BL layer creation
 * UI design for each functionality
