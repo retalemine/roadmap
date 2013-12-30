@@ -8,11 +8,11 @@
 * Archival of data for analytic purpose
 * Bill processing
 * Order tracking
+* User role based access restriction
 
 ###Release 3.0:
 * Barcode based processing
 * Price label generation
-* User role based access restriction
 
 ###Release 4.0:
 * Dealer tracking
@@ -90,6 +90,9 @@
   * For every return in delivery the sales order is updated accordingly.
 * Sales closure
   * Inventory updated based on every sales order.
+* Access control
+  * Access control to each functionality should be confined to specific designation.
+  * Access control to action in a functionality should be confined to specific user group.
 
 ###Release 3.0:
 ####Functionalities:
@@ -99,9 +102,6 @@
 * Sales order processing
   * For product with barcode label, the product information should be retrieved.
   * In case of multiple suggestion, each should be properly prioritized.
-* Access control
-  * Access control to each functionality should be confined to specific designation.
-  * Access control to action in a functionality should be confined to specific user group.
 
 ###Release 4.0:
 ####Functionalities:
