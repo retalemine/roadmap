@@ -54,10 +54,10 @@
 ---
 ###Release 1.0:
 ####Functionalities:
-1. On the fly inventory creation without interfering with bill processing
-* Manual creation of inventory
+1. On the fly general inventory creation without interfering with bill processing
 * View inventory
 * Edit inventory
+* Add to inventory
 * On the fly product suggestion
 * Sales tracking and rendering
 * Bill printing
