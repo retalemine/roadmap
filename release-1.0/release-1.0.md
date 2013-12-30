@@ -2,7 +2,7 @@
 
 ####Action items:
 * Use case scenarios for each functionality ![][tick]
-* Mongo Query for each use cases ![][tick]
+* Mongo Query for each use cases
 * General product schema design ![][tick]
 * General bill schema design ![][tick]
 * Overall architecture with distributed components and multi terminals
