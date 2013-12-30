@@ -9,7 +9,6 @@
 * Product Unit (pUnit)
   * value (val) [[(0-9)*][(0-9)*][small,medium,big]]
   * unit (unit) [kg, lt, size]
-* Single priced (marketPriced)
 * Price (pPrice) []
   * price [(0-9)*]
   * unit [Rs]
@@ -30,6 +29,7 @@
 * Amount received*
 * Payback amount*
 * Footer Notes
+* Biller Name
 * Delivery Details
   * Contact Person Name
   * Mobile Number
@@ -55,3 +55,4 @@
   * Status [Paid, On door delivery, Monthly Pay]
   * Mode [Cash, Cheque]
   * Date
+*Biller Name
