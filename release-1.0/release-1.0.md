@@ -35,7 +35,7 @@
 * On deleting a unbounded priced product, the outdated price alone gets removed.
 
 ###Use cases under functionality 4:
-1. * Adding a new product.
+1. Adding a new product.
 * Adding a product with different unit.
 * Adding new price to a product and marked to delete all old price.
 
