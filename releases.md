@@ -54,7 +54,7 @@
 ---
 ###Release 1.0:
 ####Functionalities:
-1. On the fly general inventory creation without interfering with bill processing
+1. On the fly general inventory creation
 * View inventory
 * Edit inventory
 * Add to inventory
@@ -79,7 +79,7 @@
 * Inventory creation/update for product at shelf [ purchase schema won't be updated ]
   * For each product in the shelf, the inventory is either created or updated.
   * Max discount% is not set if CP is undetermined.
-* Inventory creation on the fly, for product getting billed without an entry in product schema.[ purchase schema won't be updated ]
+* Inventory creation on the fly, for product getting billed without an entry in product schema (without interfering with bill processing).[ purchase schema won't be updated ]
 * Archival of outdated products and outdated price for analytic.
 * Cash & Carry Order
   * For every order placed, sales order schema is created and a bill is generated as paid.
