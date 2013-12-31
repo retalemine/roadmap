@@ -5,7 +5,7 @@
 * Mongo Query for each use cases
 * General product schema design ![][tick]
 * General bill schema design ![][tick]
-* Overall architecture with distributed components and multi terminals
+* Overall architecture with distributed components and single terminal
 * BL layer creation
 * UI design for each functionality
 * UI layer creation
