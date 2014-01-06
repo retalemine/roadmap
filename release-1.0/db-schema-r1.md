@@ -8,7 +8,7 @@
 * Product Name (pName)
 * Product Unit (pUnit)
   * value (val) [[(0-9)*][(0-9)*][small,medium,big]]
-  * unit (unit) [kg, lt, size, ml]
+  * unit (unit) [gram, kg, ml, lt, size, pcs]
 * Price (pPrice) []
   * price [(0-9)*]
   * unit [Rs]
