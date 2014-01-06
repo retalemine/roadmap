@@ -37,6 +37,7 @@
 ###Use cases under functionality 4:
 1. Adding a new product.
 * Adding a product with different unit.
+* Adding a product with different price.
 * Adding new price to a product and marked to delete all old price.
 
 ###Use cases under functionality 5:
