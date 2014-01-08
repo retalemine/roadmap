@@ -23,8 +23,10 @@
   * Quantity
   * Net Price ( Quantity * Unit Price ) [-ve for return items]
 * Gross Amount
-* Tax % [Sales Tax, Service Tax, VAT]
-* Tax Amount [Sales Tax, Service Tax, VAT]
+* Tax
+  * Tax type [Sales Tax, Service Tax, VAT]
+  * Tax %
+  * Tax Amount
 * Net Amount Payable
 * Amount received*
 * Payback amount*
@@ -35,22 +37,22 @@
   * Home Address
 
 ####Sales-order Schema:
-* Bill No.
-* Billed Date
-  * Serial No.
-  * Product Description
-  * Unit Price(MRP)
-  * Quantity
-  * Net Price (Quantity *  Unit Price)
-* Gross Amount
-* Tax % [Sales Tax, Service Tax, VAT]
-* Tax Amount [Sales Tax, Service Tax, VAT]
-* Net Amount Payable
-* Payment
-  * Mode [Cash, Cheque]
-  * Paid Date
-  * Status [Paid, On door delivery, Door delivered, Monthly Pay Pending, Settled vai monthly payment, waiting cheque clearence, cheque cleared]
-* Delivery Details
-  * Contact Person Name
-  * Mobile Number
-  * Home Address 
+* Bill No. (bNo)
+* Billed Date (bDate)
+* Bill Items (bItems) []
+  * Product Description (pDesc)
+  * Unit Price(MRP) (pPrice)
+  * Quantity (qty)
+* Tax (tax) []
+  * tax type (type) [Sales Tax, Service Tax, VAT]
+  * percentage (pct)
+* Net Amount Payable (bAmount) [(0-9)*]
+* Billing unit (bunit) [Rs]
+* Payment (payment)
+  * Mode (mode) [Cash, Cheque]
+  * Paid Date (date)
+  * Status (status) [] [paid, on door delivery, door delivered, monthly Pay Pending, settled vai monthly payment, waiting cheque clearence, cheque cleared]
+* Delivery Details (dDetail)
+  * Contact Person Name (name)
+  * Mobile Number (phoneNo)
+  * Home Address (address)

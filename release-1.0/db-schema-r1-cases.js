@@ -607,13 +607,69 @@ db.productSet3.update({
 ///////////////////////////////////////////////////////////////////////////////
 ////USECASE 6.1 Every bill should get saved to sales-order schema//////////////
 ///////////////////////////////////////////////////////////////////////////////
-db.salesOrders.insert(
-	
-)
+//////NOTE : Only product set of single pricing unit (like 'Rs') grouped///////
+///////////////////////////////////////////////////////////////////////////////
+db.salesOrders3.insert({
+	bNo: ObjectId().str,
+	bDate: new Date(),
+	bItems: [{
+		pDesc: 'Lux Sandal - small size',
+		pPrice: 20,
+		qty: 2
+	},{
+		pDesc: 'Sugar - 1 kg',
+		pPrice: 45,
+		qty: 3
+	}],
+	tax: [{
+		type: 'VAT',
+		pct: 4
+	},{
+		type: 'Service Tax',
+		pct: 2
+	}],
+	bAmount: 185.5,
+	bUnit: 'Rs',
+	payment: {
+		mode: 'cash',
+		date: new Date(),
+		status: ['paid']
+	}
+})
+db.salesOrders3.insert({
+	bNo: ObjectId().str,
+	bDate: new Date(),
+	bItems: [{
+		pDesc: 'Lux Sandal - big size',
+		pPrice: 45,
+		qty: 1
+	},{
+		pDesc: 'Sugar - 1 kg',
+		pPrice: 45,
+		qty: 1
+	}],
+	tax: [{
+		type: 'VAT',
+		pct: 4
+	}],
+	bAmount: 185.5,
+	bUnit: 'Rs',
+	payment: {
+		status: ['on door delivery']
+	},
+	dDetail: {
+		name: 'Suresh'
+		phoneNo: 09950554466
+		address: '45 first street, address, city pincode'
+	}
+})
 ///////////////////////////////////////////////////////////////////////////////
 ////USECASE 6.2 Every processed bill should be rendered for reference//////////
 ///////////////////////////////////////////////////////////////////////////////
-
+db.salesOrders3.find({
+}).sort({
+	bDate:-1
+})
 ///////////////////////////////////////////////////////////////////////////////
 ////USECASE 6.3 Searchable by date/////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
