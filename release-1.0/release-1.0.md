@@ -50,6 +50,8 @@
 * Searchable by bill amount.
 * Searchable by date and bill amount.
 * Searchable by a product in the bill.
+* Searchable by payment status.
+* Searchable by contact person or phone no.
 
 ###Use cases under functionality 7:
 1. Bill printing.

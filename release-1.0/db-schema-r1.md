@@ -29,7 +29,6 @@
 * Amount received*
 * Payback amount*
 * Footer Notes
-* Biller Name
 * Delivery Details
   * Contact Person Name
   * Mobile Number
@@ -46,7 +45,7 @@
 * Gross Amount
 * Tax % [Sales Tax, Service Tax, VAT]
 * Tax Amount [Sales Tax, Service Tax, VAT]
-* Net Amount Paid
+* Net Amount Payable
 * Payment
   * Mode [Cash, Cheque]
   * Paid Date
