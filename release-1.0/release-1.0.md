@@ -44,15 +44,16 @@
 1. Ajax call based on characters entered and search inventory based on name and unit.
 
 ###Use cases under functionality 6:
-1. Every bill should get saved to sales-order schema along with biller name.
+1. Every bill should get saved to sales-order schema.
 * Every processed bill should be rendered for reference.
 * Searchable by date.
 * Searchable by bill amount.
 * Searchable by date and bill amount.
-* Searchable by biller name.
+* Searchable by a product in the bill.
 
 ###Use cases under functionality 7:
-1. Bill printing
+1. Bill printing.
+* Printing additional copy of bill.
 
 ###Use cases under functionality 8:
 1. Multiple printer support

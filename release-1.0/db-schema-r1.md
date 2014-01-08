@@ -47,12 +47,11 @@
 * Tax % [Sales Tax, Service Tax, VAT]
 * Tax Amount [Sales Tax, Service Tax, VAT]
 * Net Amount Paid
+* Payment
+  * Mode [Cash, Cheque]
+  * Paid Date
+  * Status [Paid, On door delivery, Door delivered, Monthly Pay Pending, Settled vai monthly payment, waiting cheque clearence, cheque cleared]
 * Delivery Details
   * Contact Person Name
   * Mobile Number
   * Home Address 
-* Payment
-  * Status [Paid, On door delivery, Monthly Pay]
-  * Mode [Cash, Cheque]
-  * Date
-* Biller Name
