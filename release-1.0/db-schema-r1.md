@@ -46,7 +46,7 @@
 * Tax (tax) []
   * tax type (type) [Sales Tax, Service Tax, VAT]
   * percentage (pct)
-* Net Amount Payable (bAmount) [(0-9)*]
+* Net Amount Payable (bNetAmount) [(0-9)*]
 * Billing unit (bunit) [Rs]
 * Payment (payment)
   * Mode (mode) [Cash, Cheque]

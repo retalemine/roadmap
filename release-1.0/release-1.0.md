@@ -52,6 +52,10 @@
 * Searchable by a product in the bill.
 * Searchable by payment status.
 * Searchable by contact person or phone no.
+* Update Delivery Status along with payment status.
+* Update Cheque clearence status.
+* Rendering the sum total of all the bills shown up in the search result.
+* Reminding those bills not yet paid.
 
 ###Use cases under functionality 7:
 1. Bill printing.

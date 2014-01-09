@@ -59,7 +59,7 @@
 * Edit inventory
 * Add to inventory
 * On the fly product suggestion
-* Sales tracking and rendering
+* Sales tracking, rendering and update of delivery and payment status.
 * Bill printing
 * Multiple printer support
 * Multi language support
