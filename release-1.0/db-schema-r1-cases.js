@@ -636,9 +636,39 @@ db.salesOrders3.insert({
 		status: ['paid']
 	}
 })
+///////////////////////////////////////////////////////////////////////////////
+/////////////////////TEST DATA/////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 db.salesOrders3.insert({
-	bNo: ObjectId().str,
-	bDate: new Date(),
+	bNo: 1,
+	bDate: new Date(2013, 11, 31),
+	bItems: [{
+		pDesc: 'Lux Sandal - small size',
+		pPrice: 20,
+		qty: 6
+	},{
+		pDesc: 'Sugar - 1 kg',
+		pPrice: 45,
+		qty: 2
+	}],
+	tax: [{
+		type: 'VAT',
+		pct: 4
+	},{
+		type: 'Service Tax',
+		pct: 2
+	}],
+	bNetAmount: 159,
+	bUnit: 'Rs',
+	payment: {
+		mode: 'cash',
+		date: new Date(2013, 11, 31),
+		status: ['paid']
+	}
+})
+db.salesOrders3.insert({
+	bNo: 2,
+	bDate: new Date(2013, 11, 31),
 	bItems: [{
 		pDesc: 'Lux Sandal - big size',
 		pPrice: 45,
@@ -663,37 +693,215 @@ db.salesOrders3.insert({
 		address: '45 first street, address, city pincode'
 	}
 })
+db.salesOrders3.insert({
+	bNo: 3,
+	bDate: new Date(2014, 0, 1),
+	bItems: [{
+		pDesc: 'Hamam - big size',
+		pPrice: 55,
+		qty: 1
+	},{
+		pDesc: 'Sugar - 1 kg',
+		pPrice: 45,
+		qty: 1
+	}],
+	tax: [{
+		type: 'VAT',
+		pct: 4
+	}],
+	bNetAmount: 104,
+	bUnit: 'Rs',
+	payment: {
+		status: ['monthly Pay Pending']
+	},
+	dDetail: {
+		name: 'Kailesh',
+		phoneNo: 08950554466,
+		address: '51 second street, address, city pincode'
+	}
+})
+db.salesOrders3.insert({
+	bNo: 4,
+	bDate: new Date(2014, 0, 2),
+	bItems: [{
+		pDesc: 'Lux Sandal - small size',
+		pPrice: 20,
+		qty: 2
+	},{
+		pDesc: 'Sugar - 1 kg',
+		pPrice: 45,
+		qty: 3
+	}],
+	tax: [{
+		type: 'VAT',
+		pct: 4
+	},{
+		type: 'Service Tax',
+		pct: 2
+	}],
+	bNetAmount: 185.5,
+	bUnit: 'Rs',
+	payment: {
+		mode: 'cheque',
+		status: ['waiting cheque clearence']
+	}
+})
+db.salesOrders3.insert({
+	bNo: 5,
+	bDate: new Date(2014, 0, 3),
+	bItems: [{
+		pDesc: 'Hamam - small size',
+		pPrice: 15,
+		qty: 2
+	},{
+		pDesc: 'Sugar - 1 kg',
+		pPrice: 45,
+		qty: 1
+	}],
+	tax: [{
+		type: 'VAT',
+		pct: 4
+	}],
+	bNetAmount: 78,
+	bUnit: 'Rs',
+	payment: {
+		mode: 'cash',
+		date: new Date(2014, 0, 3),
+		status: ['door delivered','paid']
+	},
+	dDetail: {
+		name: 'Mahesh',
+		phoneNo: 07950554466,
+		address: '5 second street, address, city pincode'
+	}
+})
+db.salesOrders3.insert({
+	bNo: 6,
+	bDate: new Date(2014, 0, 7),
+	bItems: [{
+		pDesc: 'Hamam - big size',
+		pPrice: 55,
+		qty: 1
+	},{
+		pDesc: 'Axe body spray - 150 ml',
+		pPrice: 145,
+		qty: 1
+	}],
+	tax: [{
+		type: 'VAT',
+		pct: 4
+	}],
+	bNetAmount: 208,
+	bUnit: 'Rs',
+	payment: {
+		mode: 'cash',
+		date: new Date(2014, 0, 31),
+		status: ['settled via monthly payment','paid']
+	},
+	dDetail: {
+		name: 'Kailesh',
+		phoneNo: 08950554466,
+		address: '51 second street, address, city pincode'
+	}
+})
+db.salesOrders3.insert({
+	bNo: 7,
+	bDate: new Date(2014, 1, 1),
+	bItems: [{
+		pDesc: 'Lux Sandal - small size',
+		pPrice: 20,
+		qty: 2
+	},{
+		pDesc: 'Sugar - 1 kg',
+		pPrice: 45,
+		qty: 3
+	}],
+	tax: [{
+		type: 'VAT',
+		pct: 4
+	},{
+		type: 'Service Tax',
+		pct: 2
+	}],
+	bNetAmount: 185.5,
+	bUnit: 'Rs',
+	payment: {
+		mode: 'cheque',
+		date: new Date(2014, 1, 10),
+		status: ['cheque cleared','paid']
+	}
+})
 ///////////////////////////////////////////////////////////////////////////////
 ////USECASE 6.2 Every processed bill should be rendered for reference//////////
 ///////////////////////////////////////////////////////////////////////////////
 db.salesOrders3.find({
 }).sort({
 	bDate:-1
-})
+}).skip(0).limit(1)
 ///////////////////////////////////////////////////////////////////////////////
 ////USECASE 6.3 Searchable by date/////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
-
+db.salesOrders3.find({
+	bDate:{
+		$gte: new Date(2014, 0, 1),
+		$lte: new Date(2014, 0, 31)
+	}
+}).sort({
+	bDate:-1
+}).skip(0).limit(1)
 ///////////////////////////////////////////////////////////////////////////////
 ////USECASE 6.4 Searchable by bill amount//////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
-
+db.salesOrders3.find({
+	bNetAmount:{
+		$gte: 50,
+		$lte: 100
+	}
+}).sort({
+	bDate:-1
+}).skip(0).limit(1)
 ///////////////////////////////////////////////////////////////////////////////
 ////USECASE 6.5 Searchable by date and bill amount/////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
-
+db.salesOrders3.find({
+	bDate:{
+		$gte: new Date(2014, 0, 1),
+		$lte: new Date(2014, 0, 31)
+	},
+	bNetAmount:{
+		$gte: 50,
+		$lte: 100
+	}
+}).sort({
+	bDate:-1
+}).skip(0).limit(1)
 ///////////////////////////////////////////////////////////////////////////////
 ////USECASE 6.6 Searchable by a product in the bill////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
-
+db.salesOrders3.find({
+	bItems.pDesc://??Array
+}).sort({
+	bDate:-1
+}).skip(0).limit(1)
 ///////////////////////////////////////////////////////////////////////////////
 ////USECASE 6.7 Searchable by payment status///////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
-
+db.salesOrders3.find({
+	payment.status: //??
+}).sort({
+	bDate:-1
+}).skip(0).limit(1)
 ///////////////////////////////////////////////////////////////////////////////
 ////USECASE 6.8 Searchable by contact person or phone no.//////////////////////
 ///////////////////////////////////////////////////////////////////////////////
-
+db.salesOrders3.find({
+	$or:{
+		dDetail.name: //??,
+		dDetail.phoneNo:
+	}
+}).sort({
+	bDate:-1
+}).skip(0).limit(1)
 ///////////////////////////////////////////////////////////////////////////////
 ////USECASE 6.9 Update Delivery Status along with payment status///////////////
 ///////////////////////////////////////////////////////////////////////////////

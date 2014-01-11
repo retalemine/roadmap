@@ -93,6 +93,7 @@
 * Access control
   * Access control to each functionality should be confined to specific designation.
   * Access control to action in a functionality should be confined to specific user group.
+* Bill/Invoice printing.
 
 ###Release 3.0:
 ####Functionalities:
