@@ -585,25 +585,29 @@ db.productSet3.update({
         }
 })
 ///////////////////////////////////////////////////////////////////////////////
-////USECASE 4.1 Adding a new product//////USECASE 1.1//////////////////////////
+////USECASE 4.1 Adding a new product///////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
-
+//USECASE 1.1
 ///////////////////////////////////////////////////////////////////////////////
-////USECASE 4.2 Adding a product with different unit////////USECASE 1.2////////
+////USECASE 4.2 Adding a product with different unit///////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
-
+//USECASE 1.2
 ///////////////////////////////////////////////////////////////////////////////
-////USECASE 4.3 Adding a product with different price///////USECASE 1.3////////
+////USECASE 4.3 Adding a product with different price//////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
-
+//USECASE 1.3
 ///////////////////////////////////////////////////////////////////////////////
-////USECASE 4.4 Adding new price to a product and marked to delete all old price - USECASE 1.4
+////USECASE 4.4 Adding new price to a product and marked to delete all old price
 ///////////////////////////////////////////////////////////////////////////////
-
+//USECASE 1.4
 ///////////////////////////////////////////////////////////////////////////////
 ////USECASE 5.1 Ajax call based on characters entered and search inventory based on name and unit
 ///////////////////////////////////////////////////////////////////////////////
-??
+db.productSet3.find({ 
+	pName:/lux sandal/i 
+},{
+	_id:0,pName:1,pUnit:1
+})
 ///////////////////////////////////////////////////////////////////////////////
 ////USECASE 6.1 Every bill should get saved to sales-order schema//////////////
 ///////////////////////////////////////////////////////////////////////////////
@@ -632,8 +636,8 @@ db.salesOrders3.insert({
 	bUnit: 'Rs',
 	payment: {
 		mode: 'cash',
-		date: new Date(),
-		status: ['paid']
+		paid: 'Y',
+		date: new Date()
 	}
 })
 ///////////////////////////////////////////////////////////////////////////////
@@ -641,7 +645,7 @@ db.salesOrders3.insert({
 ///////////////////////////////////////////////////////////////////////////////
 db.salesOrders3.insert({
 	bNo: 1,
-	bDate: new Date(2013, 11, 31),
+	bDate: new Date(2013, 11, 31, 6, 0, 0, 0),
 	bItems: [{
 		pDesc: 'Lux Sandal - small size',
 		pPrice: 20,
@@ -662,67 +666,13 @@ db.salesOrders3.insert({
 	bUnit: 'Rs',
 	payment: {
 		mode: 'cash',
-		date: new Date(2013, 11, 31),
-		status: ['paid']
+		paid: 'Y',
+		date: new Date(2013, 11, 31, 6, 0, 0, 0)
 	}
 })
 db.salesOrders3.insert({
 	bNo: 2,
-	bDate: new Date(2013, 11, 31),
-	bItems: [{
-		pDesc: 'Lux Sandal - big size',
-		pPrice: 45,
-		qty: 1
-	},{
-		pDesc: 'Sugar - 1 kg',
-		pPrice: 45,
-		qty: 1
-	}],
-	tax: [{
-		type: 'VAT',
-		pct: 4
-	}],
-	bNetAmount: 93.5,
-	bUnit: 'Rs',
-	payment: {
-		status: ['on door delivery']
-	},
-	dDetail: {
-		name: 'Suresh',
-		phoneNo: 09950554466,
-		address: '45 first street, address, city pincode'
-	}
-})
-db.salesOrders3.insert({
-	bNo: 3,
-	bDate: new Date(2014, 0, 1),
-	bItems: [{
-		pDesc: 'Hamam - big size',
-		pPrice: 55,
-		qty: 1
-	},{
-		pDesc: 'Sugar - 1 kg',
-		pPrice: 45,
-		qty: 1
-	}],
-	tax: [{
-		type: 'VAT',
-		pct: 4
-	}],
-	bNetAmount: 104,
-	bUnit: 'Rs',
-	payment: {
-		status: ['monthly Pay Pending']
-	},
-	dDetail: {
-		name: 'Kailesh',
-		phoneNo: 08950554466,
-		address: '51 second street, address, city pincode'
-	}
-})
-db.salesOrders3.insert({
-	bNo: 4,
-	bDate: new Date(2014, 0, 2),
+	bDate: new Date(2013, 11, 31, 6, 0, 5, 0),
 	bItems: [{
 		pDesc: 'Lux Sandal - small size',
 		pPrice: 20,
@@ -743,12 +693,74 @@ db.salesOrders3.insert({
 	bUnit: 'Rs',
 	payment: {
 		mode: 'cheque',
-		status: ['waiting cheque clearence']
+		date: new Date(2013, 11, 31, 6, 0, 5, 0)
+	},
+	cDetail: {
+		name: 'Rajesh',
+		phoneNo: 09950554466,
+		address: '#1 second street, address, city pincode'
 	}
 })
 db.salesOrders3.insert({
+	bNo: 3,
+	bDate: new Date(2014, 0, 1, 6, 0, 0, 0),
+	bItems: [{
+		pDesc: 'Hamam - big size',
+		pPrice: 55,
+		qty: 1
+	},{
+		pDesc: 'Sugar - 1 kg',
+		pPrice: 45,
+		qty: 1
+	}],
+	tax: [{
+		type: 'VAT',
+		pct: 4
+	}],
+	bNetAmount: 104,
+	bUnit: 'Rs',
+	payment: {
+		delayed: 'Y'
+	},
+	cDetail: {
+		name: 'Kailesh',
+		phoneNo: 08950554466,
+		address: '51 second street, address, city pincode'
+	}
+})
+db.salesOrders3.insert({
+	bNo: 4,
+	bDate: new Date(2014, 0, 2, 6, 0, 5, 0),
+	bItems: [{
+		pDesc: 'Lux Sandal - big size',
+		pPrice: 45,
+		qty: 1
+	},{
+		pDesc: 'Sugar - 1 kg',
+		pPrice: 45,
+		qty: 1
+	}],
+	tax: [{
+		type: 'VAT',
+		pct: 4
+	}],
+	bNetAmount: 93.5,
+	bUnit: 'Rs',
+	payment: {
+		mode: 'cash',
+		paid: 'Y',
+		date: new Date(2014, 0, 2, 6, 0, 5, 0)
+	},
+	cDetail: {
+		name: 'Suresh',
+		phoneNo: 09950554466,
+		address: '45 first street, address, city pincode'
+	},
+	dDelivered: 'N'
+})
+db.salesOrders3.insert({
 	bNo: 5,
-	bDate: new Date(2014, 0, 3),
+	bDate: new Date(2014, 0, 3, 6, 0, 0, 0),
 	bItems: [{
 		pDesc: 'Hamam - small size',
 		pPrice: 15,
@@ -765,19 +777,44 @@ db.salesOrders3.insert({
 	bNetAmount: 78,
 	bUnit: 'Rs',
 	payment: {
-		mode: 'cash',
-		date: new Date(2014, 0, 3),
-		status: ['door delivered','paid']
+		mode: 'cheque',
+		date: new Date(2014, 0, 3, 6, 0, 0, 0),
 	},
-	dDetail: {
+	cDetail: {
 		name: 'Mahesh',
 		phoneNo: 07950554466,
 		address: '5 second street, address, city pincode'
-	}
+	},
+	dDelivered: 'N'
+})
+db.salesOrders3.insert({
+	bNo: 106070,
+	bDate: new Date(2014, 0, 7, 6, 0, 0, 0),
+	bItems: [{
+		pDesc: 'Hamam - big size',
+		pPrice: 55,
+		qty: 1
+	},{
+		pDesc: 'Axe body spray - 150 ml',
+		pPrice: 145,
+		qty: 1
+	}],
+	tax: [{
+		type: 'VAT',
+		pct: 4
+	}],
+	bNetAmount: 208,
+	bUnit: 'Rs',
+	cDetail: {
+		name: 'Kailesh',
+		phoneNo: 08950554466,
+		address: '51 second street, address, city pincode'
+	},
+	dDelivered: 'N'
 })
 db.salesOrders3.insert({
 	bNo: 6,
-	bDate: new Date(2014, 0, 7),
+	bDate: new Date(2014, 0, 9, 6, 0, 0, 0),
 	bItems: [{
 		pDesc: 'Hamam - big size',
 		pPrice: 55,
@@ -795,18 +832,48 @@ db.salesOrders3.insert({
 	bUnit: 'Rs',
 	payment: {
 		mode: 'cash',
-		date: new Date(2014, 0, 31),
-		status: ['settled via monthly payment','paid']
+		paid: 'Y',
+		date: new Date(2014, 0, 9, 16, 0, 5, 0)
 	},
-	dDetail: {
+	cDetail: {
 		name: 'Kailesh',
 		phoneNo: 08950554466,
 		address: '51 second street, address, city pincode'
-	}
+	},
+	dDelivered: 'Y'
 })
 db.salesOrders3.insert({
 	bNo: 7,
-	bDate: new Date(2014, 1, 1),
+	bDate: new Date(2014, 0, 10, 6, 0, 0, 0),
+	bItems: [{
+		pDesc: 'Hamam - big size',
+		pPrice: 55,
+		qty: 1
+	},{
+		pDesc: 'Axe body spray - 150 ml',
+		pPrice: 145,
+		qty: 1
+	}],
+	tax: [{
+		type: 'VAT',
+		pct: 4
+	}],
+	bNetAmount: 208,
+	bUnit: 'Rs',
+	payment: {
+		mode: 'cheque',
+		date: new Date(2014, 0, 10, 16, 0, 5, 0)
+	},
+	cDetail: {
+		name: 'Kailesh',
+		phoneNo: 08950554466,
+		address: '51 second street, address, city pincode'
+	},
+	dDelivered: 'Y'
+})
+db.salesOrders3.insert({
+	bNo: 108090,
+	bDate: new Date(2014, 1, 1, 6, 0, 0, 0),
 	bItems: [{
 		pDesc: 'Lux Sandal - small size',
 		pPrice: 20,
@@ -826,10 +893,103 @@ db.salesOrders3.insert({
 	bNetAmount: 185.5,
 	bUnit: 'Rs',
 	payment: {
+		delayed: 'Y'
+	},
+	cDetail: {
+		name: 'jai',
+		phoneNo: 07950554466,
+		address: '52 second street, address, city pincode'
+	},
+	dDelivered: 'N'
+})
+db.salesOrders3.insert({
+	bNo: 118090,
+	bDate: new Date(2014, 1, 3, 6, 0, 0, 0),
+	bItems: [{
+		pDesc: 'Hamam - small size',
+		pPrice: 15,
+		qty: 2
+	},{
+		pDesc: 'Sugar - 1 kg',
+		pPrice: 45,
+		qty: 1
+	}],
+	tax: [{
+		type: 'VAT',
+		pct: 4
+	}],
+	bNetAmount: 78,
+	bUnit: 'Rs',
+	payment: {
+		delayed: 'Y'
+	},
+	cDetail: {
+		name: 'Mahesh',
+		phoneNo: 07950554466,
+		address: '5 second street, address, city pincode'
+	},
+	dDelivered: 'Y'
+})
+db.salesOrders3.insert({
+	bNo: 8,
+	bDate: new Date(2014, 1, 5, 6, 0, 0, 0),
+	bItems: [{
+		pDesc: 'Hamam - big size',
+		pPrice: 55,
+		qty: 1
+	},{
+		pDesc: 'Axe body spray - 150 ml',
+		pPrice: 145,
+		qty: 1
+	}],
+	tax: [{
+		type: 'VAT',
+		pct: 4
+	}],
+	bNetAmount: 208,
+	bUnit: 'Rs',
+	payment: {
+		delayed: 'Y',
+		mode: 'cash',
+		paid: 'Y',
+		date: new Date(2014, 1, 27, 16, 0, 5, 0)
+	},
+	cDetail: {
+		name: 'Kailesh',
+		phoneNo: 08950554466,
+		address: '51 second street, address, city pincode'
+	},
+	dDelivered: 'Y'
+})
+db.salesOrders3.insert({
+	bNo: 9,
+	bDate: new Date(2014, 1, 6, 6, 0, 5, 0),
+	bItems: [{
+		pDesc: 'Lux Sandal - big size',
+		pPrice: 45,
+		qty: 1
+	},{
+		pDesc: 'Sugar - 1 kg',
+		pPrice: 45,
+		qty: 1
+	}],
+	tax: [{
+		type: 'VAT',
+		pct: 4
+	}],
+	bNetAmount: 93.5,
+	bUnit: 'Rs',
+	payment: {
+		delayed: 'Y',
 		mode: 'cheque',
-		date: new Date(2014, 1, 10),
-		status: ['cheque cleared','paid']
-	}
+		date: new Date(2014, 1, 27, 16, 0, 5, 0)
+	},
+	cDetail: {
+		name: 'Suresh',
+		phoneNo: 09950554466,
+		address: '45 first street, address, city pincode'
+	},
+	dDelivered: 'Y'
 })
 ///////////////////////////////////////////////////////////////////////////////
 ////USECASE 6.2 Every processed bill should be rendered for reference//////////
@@ -840,11 +1000,20 @@ db.salesOrders3.find({
 }).skip(0).limit(1)
 ///////////////////////////////////////////////////////////////////////////////
 ////USECASE 6.3 Searchable by date/////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
+////////////////////////////Range of date//////////////////////////////////////
 db.salesOrders3.find({
 	bDate:{
-		$gte: new Date(2014, 0, 1),
-		$lte: new Date(2014, 0, 31)
+		$gte: new Date(2014, 0, 1, 0, 0, 0, 0),
+		$lte: new Date(2014, 0, 31, 23, 59, 59, 999)
+	}
+}).sort({
+	bDate:-1
+}).skip(0).limit(1)
+////////////////////////////Single date////////////////////////////////////////
+db.salesOrders3.find({
+	bDate:{
+		$gte: new Date(2014, 0, 7, 0, 0, 0, 0),
+		$lte: new Date(2014, 0, 7, 23, 59, 59, 999)
 	}
 }).sort({
 	bDate:-1
@@ -855,7 +1024,7 @@ db.salesOrders3.find({
 db.salesOrders3.find({
 	bNetAmount:{
 		$gte: 50,
-		$lte: 100
+		$lte: 100.5
 	}
 }).sort({
 	bDate:-1
@@ -865,12 +1034,12 @@ db.salesOrders3.find({
 ///////////////////////////////////////////////////////////////////////////////
 db.salesOrders3.find({
 	bDate:{
-		$gte: new Date(2014, 0, 1),
-		$lte: new Date(2014, 0, 31)
+		$gte: new Date(2014, 0, 1, 0, 0, 0, 0),
+		$lte: new Date(2014, 0, 31, 23, 59, 59, 999)
 	},
 	bNetAmount:{
 		$gte: 50,
-		$lte: 100
+		$lte: 100.5
 	}
 }).sort({
 	bDate:-1
@@ -879,33 +1048,149 @@ db.salesOrders3.find({
 ////USECASE 6.6 Searchable by a product in the bill////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 db.salesOrders3.find({
-	bItems.pDesc://??Array
+	'bItems.pDesc':/axe/i
 }).sort({
 	bDate:-1
 }).skip(0).limit(1)
 ///////////////////////////////////////////////////////////////////////////////
-////USECASE 6.7 Searchable by payment status///////////////////////////////////
+////USECASE 6.7 Searchable by contact person or phone no.//////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 db.salesOrders3.find({
-	payment.status: //??
+	$or:[{
+		'cDetail.name': /mahesh/i
+	},{
+		'cDetail.phoneNo':9944335511
+	}]
 }).sort({
 	bDate:-1
 }).skip(0).limit(1)
 ///////////////////////////////////////////////////////////////////////////////
-////USECASE 6.8 Searchable by contact person or phone no.//////////////////////
+////USECASE 6.8 Retrieve bills under cheque payment without clearance//////////
 ///////////////////////////////////////////////////////////////////////////////
 db.salesOrders3.find({
-	$or:{
-		dDetail.name: //??,
-		dDetail.phoneNo:
+	'payment.mode':'cheque',
+	'payment.paid':{$exists:false}
+}).sort({
+	bDate:-1
+}).skip(0).limit(1)
+///////////////////////////////////////////////////////////////////////////////
+////USECASE 6.9 Update cheque clearence status/////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+db.salesOrders3.update({
+	bNo:2
+},{
+	$set:{
+		'payment.paid':'Y',
+		'payment.date': new Date()
 	}
+})
+///////////////////////////////////////////////////////////////////////////////
+////USECASE 6.10 Retrieve deliverable bill/////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+db.salesOrders3.find({
+	dDelivered:'N'
 }).sort({
 	bDate:-1
 }).skip(0).limit(1)
 ///////////////////////////////////////////////////////////////////////////////
-////USECASE 6.9 Update Delivery Status along with payment status///////////////
+////USECASE 6.11 Update Delivery Status along with payment status//////////////
+//////////////////cash/cheque/monthly base/////////////////////////////////////
+db.salesOrders3.update({
+	bNo:4
+},{
+	$set:{
+		dDelivered: 'Y'
+	}
+})
+db.salesOrders3.update({
+	bNo:4
+},{
+	$set:{
+		dDelivered: 'Y',
+		'payment.mode':'cash',
+		'payment.paid':'Y',
+		'payment.date': new Date()
+	}
+})
+db.salesOrders3.update({
+	bNo:4
+},{
+	$set:{
+		dDelivered: 'Y',
+		'payment.mode':'cheque',
+		'payment.date': new Date()
+	}
+})
 ///////////////////////////////////////////////////////////////////////////////
-
+////USECASE 6.12 Retrieve bills under delayed payment//////////////////////////
+////////delayed flag set and payment mode is not set///////////////////////////
+db.salesOrders3.find({
+	'payment.delayed':'Y',
+	'payment.mode':{$exists:false}
+}).sort({
+	bDate:-1
+}).skip(0).limit(1)
 ///////////////////////////////////////////////////////////////////////////////
-////USECASE 6.10 Update Cheque clearence status////////////////////////////////
+////USECASE 6.13 Update payment status/////////////////////////////////////////
+///////////////cash/cheque/////////////////////////////////////////////////////
+db.salesOrders3.update({
+	bNo:3
+},{
+	$set:{
+		'payment.mode':'cash',
+		'payment.paid':'Y',
+		'payment.date': new Date()
+	}
+})
+db.salesOrders3.update({
+	bNo:3
+},{
+	$set:{
+		'payment.mode':'cheque',
+		'payment.date': new Date()
+	}
+})
+///////////////////////////////////////////////////////////////////////////////
+////USECASE 6.14 Sum total of all the bills shown up in the search result//////
+//////////////////////project can be removed///////////////////////////////////
+db.salesOrders3.aggregate([{
+	$group: {
+		_id:"",
+		NetAmount: { $sum: "$bNetAmount" } 
+	}},{
+	$project:{
+		_id:0,
+		NetAmount: "$bNetAmount"
+	}}
+]);
+///////////////////////////////////////////////////////////////////////////////
+db.salesOrders3.aggregate([{
+	$match: {
+		bDate:{
+			$gte: new Date(2014, 0, 1, 0, 0, 0, 0),
+			$lte: new Date(2014, 0, 31, 23, 59, 59, 999)
+		},
+		bNetAmount:{
+			$gte: 50,
+			$lte: 100.5
+		}
+	}},{
+	$group: {
+		_id:"",
+		bNetAmount: { $sum: "$bNetAmount" } 
+	}},{
+	$project:{
+		_id:0,
+		bNetAmount: "$bNetAmount"
+	}}
+]);
+///////////////////////////////////////////////////////////////////////////////
+///////////////info////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+db.salesOrders3.find({
+	'payment.info': {$in:['waiting cheque clearence']}
+})
+db.salesOrders3.find({
+	'payment.info':{$exists:true, $nin:['waiting cheque clearence']}
+})
 ///////////////////////////////////////////////////////////////////////////////

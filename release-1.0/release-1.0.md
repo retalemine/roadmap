@@ -14,6 +14,16 @@
 
 ---
 ###Design:
+* Purchase scenarios 
+  * pay via cash and carry
+  * pay via cheque and carry
+  * carry on pay via monthly base
+  * order door delivery and pay via cash
+  * order door delivery and pay via cheque
+  * order door delivery and pay via cash on delivery
+  * order door delivery and pay via cheque on delivery
+  * order door delivery and pay via cash on monthly base
+  * order door delivery and pay via cheque on monthly base
 * Unwinded rendering of inventory data.
 
 ---
@@ -44,18 +54,31 @@
 1. Ajax call based on characters entered and search inventory based on name and unit.
 
 ###Use cases under functionality 6:
-1. Every bill should get saved to sales-order schema.
+1. Every bill should get saved to sales-order schema as any of the below scenarios.
+  * pay via cash and carry
+  * pay via cheque and carry
+  * carry on pay via monthly base
+  * order door delivery and pay via cash
+  * order door delivery and pay via cheque
+  * order door delivery and pay via cash on delivery
+  * order door delivery and pay via cheque on delivery
+  * order door delivery and pay via cash on monthly base
+  * order door delivery and pay via cheque on monthly base
 * Every processed bill should be rendered for reference.
 * Searchable by date.
 * Searchable by bill amount.
 * Searchable by date and bill amount.
 * Searchable by a product in the bill.
-* Searchable by payment status.
 * Searchable by contact person or phone no.
-* Update Delivery Status along with payment status.
-* Update Cheque clearence status.
-* Rendering the sum total of all the bills shown up in the search result.
-* Reminding those bills not yet paid.
+* Retrieve bills under cheque payment without clearance.
+* Update cheque clearence status.
+* Retrieve deliverable bill.
+* Update Delivery Status along with payment status [cash/cheque/monthly base].
+* Retrieve bills under delayed payment i.e delayed flag set and payment mode is not set
+* Update payment status [cash/cheque]
+* Sum total of all the bills shown up in the search result.
+* Highlight bills due for payment for more than a month.
+* Lookup existing customer details while billing along with contact info.
 
 ###Use cases under functionality 7:
 1. Bill printing.

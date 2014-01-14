@@ -31,7 +31,7 @@
 * Amount received*
 * Payback amount*
 * Footer Notes
-* Delivery Details
+* Customer Detail
   * Contact Person Name
   * Mobile Number
   * Home Address
@@ -50,9 +50,12 @@
 * Billing unit (bunit) [Rs]
 * Payment (payment)
   * Mode (mode) [Cash, Cheque]
+  * Delayed pay (delayed) [Y]
+  * paid (paid) [Y]
   * Paid Date (date)
-  * Status (status) [] [paid, on door delivery, door delivered, monthly Pay Pending, settled vai monthly payment, waiting cheque clearence, cheque cleared]
-* Delivery Details (dDetail)
+* Customer Details (cDetail)
   * Contact Person Name (name)
   * Mobile Number (phoneNo)
   * Home Address (address)
+* Door Delivery Status (dDelivered) [Y/N]
+
