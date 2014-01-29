@@ -39,6 +39,13 @@
 * Vaadin
   * http://bluegulf.wordpress.com/2012/10/18/tutorial-of-setting-up-eclipsemavenvaadinjetty-project-ide-2/
   * http://blog.oio.de/2012/08/23/dynamic-reloading-of-vaadin-applications-with-maven-and-eclipse/
+  * https://vaadin.com/wiki/-/wiki/Main/Using%20Vaadin%20with%20Maven
+  * https://vaadin.com/forum#!/thread/182119
+  * http://cecchisandrone.blogspot.in/2012/07/vaadin-spring-mongodbon-cloud.html
+
+* MongoDB
+  * http://developwithstyle.com/articles/2010/07/09/handling-dates-in-mongodb/
+  * http://two4seven.me/sharding/
 
 * WCS
   * http://www-03.ibm.com/software/products/us/en/websphere-commerce
