@@ -42,6 +42,8 @@
   * https://vaadin.com/wiki/-/wiki/Main/Using%20Vaadin%20with%20Maven
   * https://vaadin.com/forum#!/thread/182119
   * http://cecchisandrone.blogspot.in/2012/07/vaadin-spring-mongodbon-cloud.html
+  * https://github.com/jojule/DocumentManager
+  * https://github.com/cecchisandrone/cloudfoundry
 
 * MongoDB
   * http://developwithstyle.com/articles/2010/07/09/handling-dates-in-mongodb/
