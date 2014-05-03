@@ -7,11 +7,11 @@ Development Framework | SpringFramework | PlayFramework, TapestryFramework, Grai
 Templating Engine | | FreeMarker, Apache Velocity
 Testing Bundle | TestNG | Junit 
 Data Center | MongoDB | 
-Dependency management | Ivy | Gradle
+Dependency management | Maven | Ivy, Gradle
 Repository manager | | nexus, artifactory
 SCM | Git (GitHub) | 
 Application Server | Jetty | Apache Tomcat, Httpd, Nginx, Jboss, Glass Fish
 IDE | Eclipse | IntelliJ, Aptana
 Continuous build | Travis | CloudBees, TeamCity, Hudson, Lunt
-Production Environment | Heroku |
+Production Environment | OpenShift | Heroku
 Platform | Ubuntu | Other linux OS
