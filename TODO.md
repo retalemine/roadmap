@@ -5,12 +5,12 @@
      * Create / update product collection [1.1-3]
      * Create a billing collection [6.1]
   * Have a UI collecting items with price for billing and save it in billing schema
-     * Setup a project using vaadin framework 
+     * Setup a project using vaadin framework __working on it__
      * Setup a project using vaadin + spring framework 
      * Setup a project using Tapestry framework 
-     * Setup a project using Play framework 
+     * Setup a project using Play framework __evolving__
      * Setup a project using vaadin + tapestry framework
-     * Setup a project using vaadin + play framework 
+     * Setup a project using vaadin + play framework __minimal support for integration__
      * Setup a project using bootstrap framework 
 * Design of application architecture
   * consider cross platform support, target multiple devices.

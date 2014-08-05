@@ -1,4 +1,5 @@
 ###Guidelines:
+* Aims to provide Business Automation Solutions
 * What need to be visualized ought to be persisted for future reference => what you need is what is saved!
 * Better Management of entry purchase and end sales.
 * Better visualization of customer need, market need and season sales.
@@ -10,6 +11,15 @@
   * Should be a fair and cost-effective marketing.
   * Better risk analysis and handling.
   * Risk factors [customer satisfaction, investment, time, product expiry period, market saturation, exit criteria]
+
+---
+###Features:
+* Sales Management
+* Inventory Management
+* Purchase Management
+* Business Intelligence
+* Finance and accounting
+* Point of Sale
 
 ---
 ###Design-factors:
