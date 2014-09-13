@@ -9,7 +9,7 @@
 * Product Unit (pUnit)
   * value (val) [[(0-9)*][(0-9)*][small,medium,big]]
   * unit (unit) [gram, kg, ml, lt, size, pcs]
-* Price (pPrice) []
+* Price (pPrices) []
   * price [(0-9)*]
   * unit [Rs]
 * Date (dateCM) [Created/Modified]
