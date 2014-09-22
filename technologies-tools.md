@@ -16,6 +16,11 @@ Repository base | GitHub | Bitbucket
 Application Server | Jetty | Apache Tomcat, Httpd, Nginx, Jboss, Glass Fish
 Profiler | | YourKit
 IDE | Eclipse | IntelliJ, Aptana
+Plugin | m2e-wtp, EclEmma | 
 Continuous build | Travis | CloudBees, TeamCity, Hudson, Lunt
 Production Environment | OpenShift | Heroku
 Platform | Ubuntu | Other linux OS
+
+
+###Eclipse Plugins:
+* TestNG - http://beust.com/eclipse
