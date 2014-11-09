@@ -28,6 +28,7 @@
 * BillNo
   * Format
   * Selection
+
 ---
 ###Use cases under functionality 1:
 1. A product getting added for the first time. ![][tick]
