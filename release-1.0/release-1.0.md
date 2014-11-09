@@ -25,18 +25,20 @@
   * order door delivery and pay via cash on monthly base
   * order door delivery and pay via cheque on monthly base
 * Unwinded rendering of inventory data.
-
+* BillNo
+  * Format
+  * Selection
 ---
 ###Use cases under functionality 1:
-1. A product getting added for the first time.
-* A product with different unit getting added for the first time.
-* A product with different price getting added.
-* A product with different price getting added and marked to delete other price details.
+1. A product getting added for the first time. ![][tick]
+* A product with different unit getting added for the first time. ![][tick]
+* A product with different price getting added. ![][tick]
+* A product with different price getting added and marked to delete other price details. ![][tick]
 
 ###Use cases under functionality 2:
-1. List every entry in DB.
-* Search product based on name.
-* Search product based on name and units.
+1. List every entry in DB. ![][tick]
+* Search product based on name. ![][tick]
+* Search product based on name and units. ![][tick]
 
 ###Use cases under functionality 3:
 1. Edit a product name. [Note: They are unbounded while rendering]
@@ -45,10 +47,10 @@
 * On deleting a unbounded priced product, the outdated price alone gets removed.
 
 ###Use cases under functionality 4:
-1. Adding a new product.
-* Adding a product with different unit.
-* Adding a product with different price.
-* Adding new price to a product and marked to delete all old price.
+1. Adding a new product. ![][tick]
+* Adding a product with different unit. ![][tick]
+* Adding a product with different price. ![][tick]
+* Adding new price to a product and marked to delete all old price. ![][tick]
 
 ###Use cases under functionality 5:
 1. Ajax call based on characters entered and search inventory based on name and unit.
