@@ -16,11 +16,33 @@ Repository base | GitHub | Bitbucket
 Application Server | Jetty | Apache Tomcat, Httpd, Nginx, Jboss, Glass Fish
 Profiler | | YourKit
 IDE | Eclipse | IntelliJ, Aptana
-Plugin | m2e-wtp, EclEmma | 
 Continuous build | Travis | CloudBees, TeamCity, Hudson, Lunt
 Production Environment | OpenShift | Heroku
 Platform | Ubuntu | Other linux OS
 
-
 ###Eclipse Plugins:
 * TestNG - http://beust.com/eclipse
+* EclEmma - Java Code Coverage for Eclipse
+* m2e-wtp - Maven Integration for Eclipse
+
+###Java API/Library:
+* Jackson - JSON processing	_requires databinding to be defined_
+* Xstream - XML processing
+* Hamcrest - A library of matcher objects
+* Jongo - Query in Java as in Mongo shell
+
+###Testing Framework:
+* JUnit
+* TestNG
+
+###Mocking Framework:
+* Easymock
+* JMockit
+* Mockito
+* Powermock
+
+###InMemory MongoDB
+* Fongo
+* EmbedMongo
+* NoSQL-Unit
+
