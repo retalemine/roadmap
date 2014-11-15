@@ -28,6 +28,9 @@
 * BillNo
   * Format
   * Selection
+* Execution environment aware code
+  * Maven Profile
+  * Spring ApplicationContextInitializer
 
 ---
 ###Use cases under functionality 1:
@@ -58,10 +61,10 @@
 
 ###Use cases under functionality 6:
 1. Every bill should get saved to sales-order schema as any of the below scenarios.
-  * pay via cash and carry
+  * pay via cash and carry ![][tick]
   * pay via cheque and carry
   * carry on pay via monthly base
-  * order door delivery and pay via cash
+  * order door delivery and pay via cash ![][tick]
   * order door delivery and pay via cheque
   * order door delivery and pay via cash on delivery
   * order door delivery and pay via cheque on delivery
