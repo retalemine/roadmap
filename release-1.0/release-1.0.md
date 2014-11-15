@@ -11,6 +11,11 @@
 * UI layer creation
 * Printer support configuration
 * Multi language implementation
+* Application Hosting
+  * OpenShift
+* MongoDB Hosting
+  * OpenShift Catridge
+  * MongoLab
 
 ---
 ###Design:
