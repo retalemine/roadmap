@@ -13,6 +13,7 @@
 ###Release 3.0:
 * Barcode based processing
 * Price label generation
+* Integration with weighing machine
 
 ###Release 4.0:
 * Dealer tracking
@@ -27,8 +28,10 @@
 * Damage and loss mitigation
 * Expenses tracking
 * Payment via card
+* SMS facilities - alert/reminder/status/promotion
 
 ###Release 6.0:
+* POS modules & Kiosk
 * Online catalog
 * Online shopping @ outlet
 * Online profile
@@ -45,7 +48,8 @@
 * Order tracking
 
 ###Release 10.0:
-* Gift, Coupons and rewards
+* Gift, Coupons/Vouchers and rewards
+* Customer loyalty program
 
 ###Release 11.0:
 * Shopping style

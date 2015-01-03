@@ -36,6 +36,14 @@
 * Execution environment aware code
   * Maven Profile
   * Spring ApplicationContextInitializer
+* Environment specifications
+  * vaadin execution environment
+  * mongodb credentials
+* Service retry mechanism
+  * mongo options - auto-connect-retry
+  * AOP
+  * Persisting timeout scenarios - MongoTimeoutException {AnyServerSelector}
+* Offline support for basic features
 
 ---
 ###Use cases under functionality 1:
