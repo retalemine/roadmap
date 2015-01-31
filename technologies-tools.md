@@ -5,6 +5,8 @@ UI components | Vaadin | GWT, Dojo, SiteMesh, Bootstrap, AngularJS, BackboneJS, 
 EventBus | Guava | PageBus, Mycila, Mbassador, Blackboard, Akka EventBus
 Core components | Java | Scala, Groovy, Python, Ruby on Rails, Node.Js
 Development Framework | SpringFramework | PlayFramework, TapestryFramework, Grails, DjangoFramework
+RESTful Webservice | Jersey | CXF, RESTEasy, Restlet, Dropwizard
+Metrics | | Ganglia, Graphite
 Templating Engine | | FreeMarker, Apache Velocity
 Cache | | 
 Testing Bundle | TestNG | Junit 
@@ -46,3 +48,6 @@ Platform | Ubuntu | Other linux OS
 * EmbedMongo
 * NoSQL-Unit
 
+###Web Services
+* JAX-WS
+* JAX-RS

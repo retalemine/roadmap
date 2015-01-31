@@ -41,6 +41,7 @@
 * Scalable
 * Zero down time
 * Cross platform compatible and should target multiple devices
+* Heterogeny, Scalability, Evolvability, Visibility, Reliability, Efficiency, Performance, Manageability
 
 Desktop Application | Web Application
 ---|---
