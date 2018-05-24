@@ -19,7 +19,7 @@
 
 ---
 ###Design:
-* Purchase scenarios 
+* Purchase scenarios
   * pay via cash and carry
   * pay via cheque and carry
   * carry on pay via monthly base

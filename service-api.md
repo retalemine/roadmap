@@ -1,0 +1,14 @@
+### Service API
+* Add/Update Product
+* Delete Product
+* Fetch Product
+* Purchase Invoices
+* Sales Invoices
+* Add/Update Customer
+* Fetch Customer
+* Add/Update Dealer
+* Fetch Dealer
+* Add/Update Events
+* Fetch Events
+* Add/Update Employee
+* Fetch Employee

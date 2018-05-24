@@ -1,3 +1,8 @@
+### Technologies-tools:
+Category           | Chosen      | Other Choice
+------------------ | ----------- | ----- ------
+Restful Webservice | Spring Rest |
+
 ###Technologies-tools:
 Category | Chosen | Other choice
 ---|:---:|---
@@ -51,3 +56,11 @@ Platform | Ubuntu | Other linux OS
 ###Web Services
 * JAX-WS
 * JAX-RS
+
+### Specification
+* JSR 275: Units Specification - Rejected
+* JSR 310: Date and Time API
+* JSR 354: Money and Currency API
+     * Moneta provides a production ready reference implementation
+* JSR 363: Units of Measurement API
+* JSR 385: Units of Measurement API 2.0
