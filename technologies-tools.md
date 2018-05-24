@@ -3,8 +3,8 @@ Category           | Chosen      | Other Choice
 ------------------ | ----------- | ----- ------
 Restful Webservice | Spring Rest |
 
-###Technologies-tools:
-Category | Chosen | Other choice
+### Technologies-tools:
+Category | Chosen     | Other choice
 ---|:---:|---
 UI components | Vaadin | GWT, Dojo, SiteMesh, Bootstrap, AngularJS, BackboneJS, Foundation
 EventBus | Guava | PageBus, Mycila, Mbassador, Blackboard, Akka EventBus
@@ -13,13 +13,13 @@ Development Framework | SpringFramework | PlayFramework, TapestryFramework, Grai
 RESTful Webservice | Jersey | CXF, RESTEasy, Restlet, Dropwizard
 Metrics | | Ganglia, Graphite
 Templating Engine | | FreeMarker, Apache Velocity
-Cache | | 
-Testing Bundle | TestNG | Junit 
-Data Center | MongoDB | 
+Cache | |
+Testing Bundle | TestNG | Junit
+Data Center | MongoDB |
 Dependency management | Maven | Ivy, Gradle
 Repository manager | | Nexus, Artifactory
 SCM | Git |
-Repository base | GitHub | Bitbucket 
+Repository base | GitHub | Bitbucket
 Application Server | Jetty | Apache Tomcat, Httpd, Nginx, Jboss, Glass Fish
 Profiler | | YourKit
 IDE | Eclipse | IntelliJ, Aptana
@@ -27,33 +27,33 @@ Continuous build | Travis | CloudBees, TeamCity, Hudson, Lunt
 Production Environment | OpenShift | Heroku
 Platform | Ubuntu | Other linux OS
 
-###Eclipse Plugins:
+### Eclipse Plugins:
 * TestNG - http://beust.com/eclipse
 * EclEmma - Java Code Coverage for Eclipse
 * m2e-wtp - Maven Integration for Eclipse
 
-###Java API/Library:
-* Jackson - JSON processing	_requires databinding to be defined_
+### Java API/Library:
+* Jackson - JSON processing _requires databinding to be defined_
 * Xstream - XML processing
 * Hamcrest - A library of matcher objects
 * Jongo - Query in Java as in Mongo shell
 
-###Testing Framework:
+### Testing Framework:
 * JUnit
 * TestNG
 
-###Mocking Framework:
+### Mocking Framework:
 * Easymock
 * JMockit
 * Mockito
 * Powermock
 
-###InMemory MongoDB
+### InMemory MongoDB
 * Fongo
 * EmbedMongo
 * NoSQL-Unit
 
-###Web Services
+### Web Services
 * JAX-WS
 * JAX-RS
 

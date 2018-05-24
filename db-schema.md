@@ -40,7 +40,7 @@
 * Tax % [Sales Tax, Service Tax, VAT, GST]
 * Tax Amount [Sales Tax, Service Tax, VAT, GST Rate]
 * Net Amount Payable
-* Payment 
+* Payment
      * Status [Paid, Not Paid]
      * Mode [Cash]
      * Date
@@ -131,35 +131,6 @@
      * Payment date
 * Due Bills[ Bill details, amount, expected date of payment ]
 
-#### Product Schema (Inventory Creation Schema):
-#####Cases:
-* Barcode available products:
-     * Is product barcode varying as unit varies for the same product? How it is used by other retail outlet?
-     * Expiry products
-     * Non-Expiry products
-* Barcode Generated Products
-     * Expiry products
-     * Non-Expiry products
-
-#####Schema:
-* GST Rate, HSN Code & SAC Code
-* Product Name [if no particular product name is applicable then category along with company will be chosen as product name]
-* Product Unit
-* Product Category [ Main Category, Sub category ]
-* Company
-* Product Description [Product Name ~  Size]
-* Picture
-* Expiry period
-* Manufacture Date
-* Expiry Date
-* MRP
-* Discount% []
-* Quantity
-* Min Quantity
-* Offer [Offer may be part of the product itself [prize-off/Volume Rise/]or another product]
-* Product Barcode [As in product]/[generated:{product description ~ MRP}]
-* Product location []
-
 #### Event Schema:
 * Event name
 * Event Date
@@ -195,7 +166,7 @@
 #### Access control schema:
 * Role Name
 * Designation
-* Read-only privileges [] 
+* Read-only privileges []
 * write privileges []
 
 
