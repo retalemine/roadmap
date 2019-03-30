@@ -1,7 +1,8 @@
 ### Schema:
+* Product Schema
+* Category Schema
 * Purchase Order Schema
 * Dealer Schema
-* Product Schema
 * Sales Order schema
      * Billing structure
 * Customer/Organization Schema
@@ -12,6 +13,53 @@
 
 ---
 ### Schema-Definition:
+#### Product Schema:
+* Product Code
+* Product Name
+* Product Unit
+     * value (val) [[(0-9)*][(0-9)*][small,medium,big]]
+     * unit (unit) [gram, kg, ml, lt, size, pcs, pkt, btl]
+* Product Description [Product Name ~  Unit]
+* CGST Rate
+* SGST Rate
+* HSN Code
+* SAC Code
+* Company
+* Product Tags
+* Picture
+* Expiry period
+* Min Quantity
+* Min Discount%
+* Product location []
+* Status
+* Date (cmt) [Created/Modified]
+* Stock (stock) []
+     * SKU
+     * SKU Unit
+	     * value (val) [[(0-9)*][(0-9)*][small,medium,big]]
+	     * unit (unit) [gram, kg, ml, lt, size, pcs, pkt, btl]
+	 * MRP
+	     * value (val) [(0-9)*]
+	     * unit (unit) [INR]
+     * MSP
+     * Min Quantity
+     * Shelf Quantity
+     * Godown Quantity
+     * Min Discount%
+     * Max Discount%
+     * Offer
+	 * Expiry period
+	 * Manufacture Date
+	 * Packed Date
+	 * Expiry Date
+	 * Picture
+	 * Date (cmt) [Created/Modified]
+
+#### Category Schema:
+* Category
+* SubCategory
+* Product Id []
+
 #### Purchase Order Schema:
 * Purchase Date
 * Purchase Order No. / Bill No. / Receipt No.

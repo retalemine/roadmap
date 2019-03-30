@@ -2,6 +2,9 @@
 Category           | Chosen      | Other Choice
 ------------------ | ----------- | ----- ------
 Restful Webservice | Spring Rest |
+Frontend Framework | Angular     | Aurelia
+Frontend Design    | Material    |
+                   |             |
 
 ### Technologies-tools:
 Category | Chosen     | Other choice
@@ -60,7 +63,8 @@ Platform | Ubuntu | Other linux OS
 ### Specification
 * JSR 275: Units Specification - Rejected
 * JSR 310: Date and Time API
+    * threeten.org
 * JSR 354: Money and Currency API
-     * Moneta provides a production ready reference implementation
+    * Moneta provides a production ready reference implementation
 * JSR 363: Units of Measurement API
 * JSR 385: Units of Measurement API 2.0

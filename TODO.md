@@ -21,3 +21,15 @@
 * Study on using Tamil keyboard
      * Sample program to complete the study
 * UI design - sketch preparation
+
+#####Cases:
+* Barcode available products:
+     * Is product barcode varying as unit varies for the same product? How it is used by other retail outlet?
+     * Expiry products
+     * Non-Expiry products
+* Barcode Generated Products
+     * Expiry products
+     * Non-Expiry products
+* (sold as unit) Product as multiple of single unit
+* (sold as loose) Product as bulk which is sold as loose unit
+* Product Name [if no particular product name is applicable then category along with company will be chosen as product name]

@@ -4,16 +4,6 @@
      * Billing structure
 
 ### Schema-Definition:
-#### Product Schema (Inventory Creation Schema):
-* Product Name (pName)
-* Product Unit (pUnit)
-     * value (val) [[(0-9)*][(0-9)*][small,medium,big]]
-     * unit (unit) [gram, kg, ml, lt, size, pcs]
-* Price (pPrices) []
-     * price [(0-9)*]
-     * unit [Rs]
-* Date (dateCM) [Created/Modified]
-
 #### Bill structure:
 * Header Notes
 * Bill No# - Billed Date#
